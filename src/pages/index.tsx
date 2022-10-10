@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
@@ -90,6 +91,17 @@ export default function App() {
 
       <div className='mx-auto max-w-5xl px-4'>
         <div className='overflow-hidden'>
+          <Fade bottom>
+            <h1 className='mt-12 text-center text-4xl font-bold text-purple-200/[.87]'>
+              Components of Technology
+            </h1>
+          </Fade>
+          <Fade bottom>
+            <p className='mt-4 mb-16 text-center text-lg text-gray-200/60'>
+              When we say technology, we refer to these components that make up
+              the tech that we all use and love.
+            </p>
+          </Fade>
           <ComponentOfTechnology
             name='Cybersecurity'
             direction='right'
@@ -126,6 +138,34 @@ export default function App() {
             gradientFrom='#555'
             gradientTo='#555'
           ></ComponentOfTechnology>
+          <Fade bottom>
+            <p className='my-4 text-center text-lg text-gray-200/60'>
+              And more!
+            </p>
+          </Fade>
+          <Fade bottom>
+            <p className='my-4 text-center text-lg text-gray-200/60'>
+              Our mission is to inspire and empower the next generation of
+              technologists in our community.
+            </p>
+          </Fade>
+          <div className='mx-auto mt-8 max-w-lg rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 p-12 backdrop-blur'>
+            <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
+              Did you know?
+            </h1>
+            <p className='font-montserrat leading-6 text-white/[.89]'>
+              According to{' '}
+              <a
+                href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
+                className='text-purple-400/[.87] underline'
+              >
+                the U.S. BLS
+              </a>
+              , jobs for information security analysts will grow by 35% from
+              2021 to 2031. This rate is 7 times faster than the average
+              employment growth rate of all occupations nationwide.
+            </p>
+          </div>
         </div>
       </div>
       <br />
