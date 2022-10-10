@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
@@ -89,7 +90,7 @@ export default function App() {
       <br />
       <br />
 
-      <div className='mx-auto max-w-5xl px-4'>
+      <div className='mx-auto max-w-5xl px-4 font-montserrat'>
         <div className='overflow-hidden'>
           <Fade bottom>
             <h1 className='mt-12 text-center text-4xl font-bold text-purple-200/[.87]'>
@@ -98,8 +99,8 @@ export default function App() {
           </Fade>
           <Fade bottom>
             <p className='mt-4 mb-16 text-center text-lg text-gray-200/60'>
-              When we say technology, we refer to these components that make up
-              the tech that we all use and love.
+              Technology isn't a monolithic industry. Rather, its components are
+              diverse and complex.
             </p>
           </Fade>
           <ComponentOfTechnology
@@ -140,32 +141,30 @@ export default function App() {
           ></ComponentOfTechnology>
           <Fade bottom>
             <p className='my-4 text-center text-lg text-gray-200/60'>
-              And more!
+              Our mission is to foster an appreciation for the ways technology
+              has changed our lives, inspiring and empowering the next
+              generation of technologists in our community.
             </p>
           </Fade>
-          <Fade bottom>
-            <p className='my-4 text-center text-lg text-gray-200/60'>
-              Our mission is to inspire and empower the next generation of
-              technologists in our community.
-            </p>
-          </Fade>
-          <div className='mx-auto mt-8 max-w-lg rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 p-12 backdrop-blur'>
-            <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
-              Did you know?
-            </h1>
-            <p className='font-montserrat leading-6 text-white/[.89]'>
-              According to{' '}
-              <a
-                href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
-                className='text-purple-400/[.87] underline'
-              >
-                the U.S. BLS
-              </a>
-              , jobs for information security analysts will grow by 35% from
-              2021 to 2031. This rate is 7 times faster than the average
-              employment growth rate of all occupations nationwide.
-            </p>
-          </div>
+          <Zoom>
+            <div className='mx-auto mt-8 max-w-lg rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 p-12 backdrop-blur'>
+              <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
+                Did you know?
+              </h1>
+              <p className='font-montserrat leading-6 text-white/[.89]'>
+                According to{' '}
+                <a
+                  href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
+                  className='text-purple-400/[.87] underline'
+                >
+                  the U.S. BLS
+                </a>
+                , jobs for information security analysts will grow by 35% from
+                2021 to 2031. This rate is 7 times faster than the average
+                employment growth rate of all occupations nationwide.
+              </p>
+            </div>
+          </Zoom>
         </div>
       </div>
       <br />
