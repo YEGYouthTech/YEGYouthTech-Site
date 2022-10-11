@@ -376,7 +376,7 @@ export default function App() {
                     Apply to be a team member
                   </h1>
                 </Fade>
-                <Fade delay={400} left>
+                <Fade duration={1500} delay={400} cascade>
                   <p className='text-lg text-gray-200/60'>
                     We are always looking for new team members. If you are
                     interested in joining our team, please fill out this form.
