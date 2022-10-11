@@ -241,6 +241,91 @@ export default function App() {
           </div>
         </div>
       </div>
+      <div className='font-workSans mx-auto max-w-5xl px-4'>
+        <div>
+          <Fade bottom>
+            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+              Join us!
+            </h1>
+          </Fade>
+          <div className='flex gap-6 text-center'>
+            <Zoom>
+              <div className='flex flex-col'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                    Join our Discord
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We have a Discord server where we discuss tech, share
+                    resources, and collaborate on projects.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <a
+                    href='https://discord.gg/szjzhYkT9e'
+                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87]'
+                  >
+                    Join
+                  </a>
+                </div>
+              </div>
+            </Zoom>
+            <Zoom>
+              <div className='flex flex-col'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                    Join our mailing list
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We send out emails about our events, workshops, and
+                    opportunities.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <a
+                    href=''
+                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87]'
+                  >
+                    Join
+                  </a>
+                </div>
+              </div>
+            </Zoom>
+          </div>
+        </div>
+      </div>
+      <div className='font-workSans mx-auto max-w-5xl px-4'>
+        <div>
+          <Fade bottom>
+            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+              Our Team
+            </h1>
+          </Fade>
+          <div className='flex flex-wrap gap-6'></div>
+        </div>
+      </div>
+      <div className='mx-auto mt-24 max-w-6xl'>
+        <p className='text-center text-lg text-white/[.87]'>
+          Thank you to our sponsors for supporting our mission!
+        </p>
+        <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'>
+          <a href='https://www.cybera.ca/'>
+            <img
+              className='w-32'
+              src='https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png'
+              alt='Cybera'
+            />
+          </a>
+          <a href='https://mlh.io/'>
+            <img
+              className='w-32'
+              src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png'
+              alt='MLH'
+            />
+          </a>
+        </div>
+        <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'></div>
+      </div>
       <br />
       <br />
       <br />
