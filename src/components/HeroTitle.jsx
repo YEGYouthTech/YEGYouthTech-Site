@@ -8,7 +8,7 @@ export function HeroTitle() {
     <div className='absolute flex h-full w-full flex-col items-center justify-center'>
       <div className='overflow-hidden'>
         <h1
-          className='h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[13vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
+          className='h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[10vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
           style={{
             opacity: !animationState ? 0 : 1,
             transform: !animationState
@@ -22,7 +22,7 @@ export function HeroTitle() {
       </div>
       <div className='overflow-hidden'>
         <h2
-          className='font-wsans h-[1.2em] text-center text-[3.2vw] font-bold leading-4 text-gray-100 drop-shadow-2xl'
+          className='font-wsans h-[1.2em] text-center text-[3.2vw] font-bold leading-none text-gray-100 drop-shadow-2xl'
           style={{
             opacity: !animationState ? 0 : 1,
             transform: !animationState
