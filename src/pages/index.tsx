@@ -296,7 +296,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-5xl px-2'>
+      <div className='font-workSans mx-auto max-w-3xl px-2'>
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
