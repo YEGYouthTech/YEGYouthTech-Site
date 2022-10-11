@@ -96,7 +96,7 @@ export default function App() {
       <div className='mx-auto max-w-5xl px-4 font-montserrat'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='mt-12 text-center text-4xl font-bold text-purple-200/[.87]'>
+            <h1 className='mt-12 text-center text-4xl font-bold text-emerald-200/[.87]'>
               Components of Technology
             </h1>
           </Fade>
@@ -150,15 +150,15 @@ export default function App() {
             </p>
           </Fade>
           <Zoom>
-            <div className='mx-auto mt-8 max-w-lg rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 p-12 backdrop-blur'>
-              <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat font-montserrat text-2xl font-bold text-transparent'>
+            <div className='mx-auto mt-8 max-w-lg rounded-2xl bg-gradient-to-r from-sky-200/10 to-sky-300/10 p-8 shadow-lg backdrop-blur'>
+              <h1 className='mb-4 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
                 Did you know?
               </h1>
               <p className='leading-7 text-white/[.89]'>
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
-                  className='text-purple-400/[.87] underline'
+                  className='text-sky-400/[.87] underline'
                 >
                   the U.S. BLS
                 </a>
@@ -173,7 +173,7 @@ export default function App() {
       <div className='font-workSans mx-auto max-w-5xl px-4'>
         <div>
           <Fade bottom>
-            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Our Projects
             </h1>
           </Fade>
@@ -246,7 +246,7 @@ export default function App() {
       <div className='font-workSans mx-auto max-w-4xl px-4'>
         <div>
           <Fade up>
-            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Join us!
             </h1>
           </Fade>
@@ -254,7 +254,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                  <h1 className='text-2xl text-gray-200/[.87]'>
                     Join our Discord
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -265,7 +265,7 @@ export default function App() {
                 <div className='mt-8'>
                   <a
                     href='https://discord.gg/szjzhYkT9e'
-                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
                   >
                     Join
                   </a>
@@ -275,7 +275,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                  <h1 className='text-2xl text-gray-200/[.87]'>
                     Join our mailing list
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -286,7 +286,7 @@ export default function App() {
                 <div className='mt-8'>
                   <a
                     href='https://forms.gle/zwErYCuSkw2PFQTXA'
-                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -301,7 +301,7 @@ export default function App() {
       <div className='font-workSans mx-auto max-w-3xl px-2'>
         <div>
           <Fade bottom>
-            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Our Team
             </h1>
           </Fade>
@@ -372,11 +372,11 @@ export default function App() {
             <div className='flex flex-col gap-4'>
               <div className='grow-1 flex flex-col gap-4'>
                 <Fade delay={200} left>
-                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                  <h1 className='text-3xl font-bold text-sky-200/[.87]'>
                     Apply to be a team member
                   </h1>
                 </Fade>
-                <Fade duration={2000} delay={400} cascade>
+                <Fade left duration={2000} delay={400}>
                   <p className='text-lg text-gray-200/60'>
                     We are always looking for new team members. If you are
                     interested in joining our team, please fill out this form.
@@ -384,10 +384,10 @@ export default function App() {
                 </Fade>
               </div>
               <div className='mt-4'>
-                <Fade delay={600} left>
+                <Fade duration={2000} delay={600} left>
                   <a
                     href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                    className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                    className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
                     target='_blank'
                     rel='noreferrer'
                   >
