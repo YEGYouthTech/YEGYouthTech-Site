@@ -254,7 +254,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='text-2xl text-gray-200/[.87]'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
                     Join our Discord
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -275,8 +275,8 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='text-2xl text-gray-200/[.87]'>
-                    Join our mailing list
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                    Subscribe to our newsletter
                   </h1>
                   <p className='text-lg text-gray-200/60'>
                     We send out emails about our events, workshops, and
@@ -290,7 +290,7 @@ export default function App() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    Join
+                    Subscribe
                   </a>
                 </div>
               </div>
