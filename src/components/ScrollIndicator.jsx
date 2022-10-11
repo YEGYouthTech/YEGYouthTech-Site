@@ -1,11 +1,12 @@
-import { useAnimationState } from '../context/AnimationStateContext';
 import { HiChevronDown as ChevronDownIcon } from 'react-icons/hi';
+
+import { useAnimationState } from '../context/AnimationStateContext';
 
 export function ScrollIndicator() {
   const { animationState } = useAnimationState();
   return (
     <div
-      className={`absolute bottom-0 p-16`}
+      className='absolute bottom-0 p-16'
       style={{
         opacity: !animationState ? 0 : 0.87,
         transform: !animationState
@@ -15,12 +16,18 @@ export function ScrollIndicator() {
       }}
     >
       <div
-        className={`bg-gray rounded-full p-2 flex flex-row gap-2 animate-bounce-mini`}
+        className='bg-gray animate-bounce-mini flex cursor-pointer flex-row gap-2 rounded-full p-2'
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth',
+          });
+        }}
       >
-        <div className={`p-1 rounded-full shadow-lg`}>
-          <ChevronDownIcon className={`text-sky-400 w-4 h-4`} />
+        <div className='rounded-full p-1 shadow-lg'>
+          <ChevronDownIcon className='h-4 w-4 text-sky-400' />
         </div>
-        <span className={`text-sky-400 pr-2`}>Scroll Down</span>
+        <span className='pr-2 text-sky-400'>Scroll Down</span>
       </div>
     </div>
   );
