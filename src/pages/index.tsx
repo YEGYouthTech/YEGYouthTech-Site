@@ -252,7 +252,7 @@ export default function App() {
           </Fade>
           <div className='flex flex-col gap-12 text-center md:flex-row'>
             <Zoom>
-              <div className='flex w-1/2 flex-col'>
+              <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
                   <h1 className='text-3xl font-bold text-purple-200/[.87]'>
                     Join our Discord
@@ -273,7 +273,7 @@ export default function App() {
               </div>
             </Zoom>
             <Zoom>
-              <div className='flex w-1/2 flex-col'>
+              <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
                   <h1 className='text-3xl font-bold text-purple-200/[.87]'>
                     Join our mailing list
