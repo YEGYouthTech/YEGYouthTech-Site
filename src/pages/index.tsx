@@ -95,12 +95,12 @@ export default function App() {
 
       <div className='mx-auto max-w-5xl px-4 font-montserrat'>
         <div className='overflow-hidden'>
-          <Fade bottom>
+          <Fade delay={100} bottom>
             <h1 className='mt-12 text-center text-4xl font-bold text-purple-200/[.87]'>
               Components of Technology
             </h1>
           </Fade>
-          <Fade bottom>
+          <Fade delay={300} bottom>
             <p className='mt-4 mb-16 text-center text-lg text-gray-200/60'>
               Technology isn't a monolithic industry. Rather, its components are
               diverse and complex.
@@ -245,7 +245,7 @@ export default function App() {
       </div>
       <div className='font-workSans mx-auto max-w-5xl px-4'>
         <div>
-          <Fade bottom>
+          <Fade up>
             <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
               Join us!
             </h1>
@@ -303,80 +303,95 @@ export default function App() {
               Our Team
             </h1>
           </Fade>
-          <Fade>
-            <div className='flex flex-wrap justify-center'>
-              <ExecMember
-                name='Oliver Chen'
-                title='President'
-                image='/images/team/exec/Oliver_Chen.jpg'
-              />
-              <ExecMember
-                name='Alex Han'
-                title='VP Operations'
-                image='/images/team/exec/Alex_Han.jpg'
-              />
-              <ExecMember
-                name='David Liu'
-                title='VP Public Relations'
-                image='/images/team/exec/David_Liu.jpg'
-              />
-              <ExecMember
-                name='Nathan Zhao'
-                title='VP Technology'
-                image='/images/team/exec/Nathan_Zhao.jpg'
-              />
-              <ExecMember
-                name='Julianna H'
-                title='VP Human Resources'
-                image='/images/team/exec/Julianna_Huang.jpg'
-              />
-            </div>
-          </Fade>
-          <Fade>
-            <div className='flex flex-wrap justify-center'>
-              <ExecMember
-                name='Joshua Terry'
-                title='Director of Media'
-                image='/images/team/exec/Joshua_Terry.jpg'
-              />
-              <ExecMember
-                name='Hao Cheng'
-                title='Director of Web Dev'
-                image='/images/team/exec/Hao_Cheng.jpg'
-              />
-              <ExecMember
-                name='Evan Yin'
-                title='Director of Art & Graphics'
-                image='/images/team/exec/Evan_Yin.jpg'
-              />
-              <ExecMember
-                name='Frank Li'
-                title='Director of Competition Devt'
-                image='/images/team/exec/Frank_Li.jpg'
-              />
-              <ExecMember name='TBD' image='/images/team/exec/silhouette.png' />
-            </div>
-          </Fade>
+          <div className='flex flex-wrap justify-center'>
+            <ExecMember
+              name='Oliver Chen'
+              title='President'
+              image='/images/team/exec/Oliver_Chen.jpg'
+              id={1}
+            />
+            <ExecMember
+              name='Alex Han'
+              title='VP Operations'
+              image='/images/team/exec/Alex_Han.jpg'
+              id={2}
+            />
+            <ExecMember
+              name='David Liu'
+              title='VP Public Relations'
+              image='/images/team/exec/David_Liu.jpg'
+              id={3}
+            />
+            <ExecMember
+              name='Nathan Zhao'
+              title='VP Technology'
+              image='/images/team/exec/Nathan_Zhao.jpg'
+              id={4}
+            />
+            <ExecMember
+              name='Julianna H'
+              title='VP Human Resources'
+              image='/images/team/exec/Julianna_Huang.jpg'
+              id={5}
+            />
+          </div>
+          <div className='flex flex-wrap justify-center'>
+            <ExecMember
+              name='Joshua Terry'
+              title='Director of Media'
+              image='/images/team/exec/Joshua_Terry.jpg'
+              id={1}
+            />
+            <ExecMember
+              name='Hao Cheng'
+              title='Director of Web Dev'
+              image='/images/team/exec/Hao_Cheng.jpg'
+              id={2}
+            />
+            <ExecMember
+              name='Evan Yin'
+              title='Director of Art & Graphics'
+              image='/images/team/exec/Evan_Yin.jpg'
+              id={3}
+            />
+            <ExecMember
+              name='Frank Li'
+              title='Director of Competition Devt'
+              image='/images/team/exec/Frank_Li.jpg'
+              id={4}
+            />
+            <ExecMember
+              name='TBD'
+              image='/images/team/exec/silhouette.png'
+              id={5}
+            />
+          </div>
           <div className='flex flex-wrap gap-6'>
             <div className='flex flex-col gap-4'>
               <div className='grow-1 flex flex-col gap-4'>
-                <h1 className='text-3xl font-bold text-purple-200/[.87]'>
-                  Apply to be a team member
-                </h1>
-                <p className='text-lg text-gray-200/60'>
-                  We are always looking for new team members. If you are
-                  interested in joining our team, please fill out this form.
-                </p>
+                <Fade delay={200} left>
+                  <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                    Apply to be a team member
+                  </h1>
+                </Fade>
+                <Fade delay={400} left>
+                  <p className='text-lg text-gray-200/60'>
+                    We are always looking for new team members. If you are
+                    interested in joining our team, please fill out this form.
+                  </p>
+                </Fade>
               </div>
-              <div className='mt-8'>
-                <a
-                  href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                  className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  Apply to join the team <BsArrowRightCircle size={24} />
-                </a>
+              <div className='mt-4'>
+                <Fade delay={600} left>
+                  <a
+                    href='https://forms.gle/VEZaiWd1qpXvsRWt6'
+                    className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Apply to join the team <BsArrowRightCircle size={24} />
+                  </a>
+                </Fade>
               </div>
             </div>
           </div>
