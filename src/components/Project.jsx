@@ -96,11 +96,11 @@ export default function Project(props) {
                   </span>
                 </div>
               )}
-              <div class='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
-                <span class='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
+              <div className='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
+                <span className='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
                   {contributor.name}
                 </span>
-                <div class='-mt-2 h-3 w-3 rotate-45 bg-black'></div>
+                <div className='-mt-2 h-3 w-3 rotate-45 bg-black'></div>
               </div>
             </a>
           ))}

@@ -1,9 +1,11 @@
 import React from 'react';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
+import ExecMember from '../components/ExecMember';
 import { HeroTitle } from '../components/HeroTitle';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
@@ -248,7 +250,7 @@ export default function App() {
               Join us!
             </h1>
           </Fade>
-          <div className='flex gap-6 text-center'>
+          <div className='flex flex-col gap-12 text-center md:flex-row'>
             <Zoom>
               <div className='flex flex-col'>
                 <div className='grow-1 flex flex-col gap-4'>
@@ -263,7 +265,7 @@ export default function App() {
                 <div className='mt-8'>
                   <a
                     href='https://discord.gg/szjzhYkT9e'
-                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87]'
+                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
                   >
                     Join
                   </a>
@@ -284,7 +286,7 @@ export default function App() {
                 <div className='mt-8'>
                   <a
                     href=''
-                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87]'
+                    className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
                   >
                     Join
                   </a>
@@ -294,17 +296,93 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-5xl px-4'>
+      <div className='font-workSans mx-auto max-w-5xl px-2'>
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
               Our Team
             </h1>
           </Fade>
-          <div className='flex flex-wrap gap-6'></div>
+          <Fade>
+            <div className='flex flex-wrap justify-center'>
+              <ExecMember
+                name='Oliver Chen'
+                title='President'
+                image='/images/team/exec/Oliver_Chen.jpg'
+              />
+              <ExecMember
+                name='Alex Han'
+                title='VP Operations'
+                image='/images/team/exec/Alex_Han.jpg'
+              />
+              <ExecMember
+                name='David Liu'
+                title='VP Public Relations'
+                image='/images/team/exec/David_Liu.jpg'
+              />
+              <ExecMember
+                name='Nathan Zhao'
+                title='VP Technology'
+                image='/images/team/exec/Nathan_Zhao.jpg'
+              />
+              <ExecMember
+                name='Julianna H'
+                title='VP Human Resources'
+                image='/images/team/exec/Julianna_Huang.jpg'
+              />
+            </div>
+          </Fade>
+          <Fade>
+            <div className='flex flex-wrap justify-center'>
+              <ExecMember
+                name='Joshua Terry'
+                title='Director of Media'
+                image='/images/team/exec/Joshua_Terry.jpg'
+              />
+              <ExecMember
+                name='Hao Cheng'
+                title='Director of Web Dev'
+                image='/images/team/exec/Hao_Cheng.jpg'
+              />
+              <ExecMember
+                name='Evan Yin'
+                title='Director of Art & Graphics'
+                image='/images/team/exec/Evan_Yin.jpg'
+              />
+              <ExecMember
+                name='Frank Li'
+                title='Director of Competition Devt'
+                image='/images/team/exec/Frank_Li.jpg'
+              />
+              <ExecMember name='TBD' image='/images/team/exec/silhouette.png' />
+            </div>
+          </Fade>
+          <div className='flex flex-wrap gap-6'>
+            <div className='flex flex-col gap-4'>
+              <div className='grow-1 flex flex-col gap-4'>
+                <h1 className='text-3xl font-bold text-purple-200/[.87]'>
+                  Apply to be a team member
+                </h1>
+                <p className='text-lg text-gray-200/60'>
+                  We are always looking for new team members. If you are
+                  interested in joining our team, please fill out this form.
+                </p>
+              </div>
+              <div className='mt-8'>
+                <a
+                  href='https://forms.gle/VEZaiWd1qpXvsRWt6'
+                  className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Apply to join the team <BsArrowRightCircle size={24} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className='mx-auto mt-24 max-w-6xl'>
+      <div className='mx-auto mt-24 max-w-6xl bg-black/[.94] py-8 px-4'>
         <p className='text-center text-lg text-white/[.87]'>
           Thank you to our sponsors for supporting our mission!
         </p>
@@ -324,38 +402,12 @@ export default function App() {
             />
           </a>
         </div>
-        <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'></div>
+        <hr className='my-8' />
+        <p className='text-center text-white/60'>
+          &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
+          All rights reserved.
+        </p>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </AnimationStateContext.Provider>
   );
 }
