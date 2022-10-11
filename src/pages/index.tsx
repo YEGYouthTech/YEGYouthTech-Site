@@ -6,6 +6,7 @@ import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
 import { HeroTitle } from '../components/HeroTitle';
 import Navbar from '../components/Navbar';
+import Project from '../components/Project';
 import { StarBG } from '../components/StarBG';
 import { AnimationStateContext } from '../context/AnimationStateContext';
 
@@ -148,10 +149,10 @@ export default function App() {
           </Fade>
           <Zoom>
             <div className='mx-auto mt-8 max-w-lg rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 p-12 backdrop-blur'>
-              <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
+              <h1 className='mb-4 bg-gradient-to-r from-[#bd039f] to-[#9460e4] bg-clip-text text-center font-montserrat font-montserrat text-2xl font-bold text-transparent'>
                 Did you know?
               </h1>
-              <p className='font-montserrat leading-6 text-white/[.89]'>
+              <p className='leading-7 text-white/[.89]'>
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
@@ -165,6 +166,79 @@ export default function App() {
               </p>
             </div>
           </Zoom>
+        </div>
+      </div>
+      <div className='font-workSans mx-auto max-w-5xl px-4'>
+        <div>
+          <Fade bottom>
+            <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
+              Our Projects
+            </h1>
+          </Fade>
+          <div className='flex gap-6'>
+            <Project
+              name='Course Companion'
+              description='A non-district tool to help students compare their timetables, filling in the gaps in official programs (SchoolZone).'
+              disclaimer='Only available for students of Old Scona Academic.'
+              logo='/images/projects/coco/logo.png'
+              link='https://coco.yegyouth.tech/'
+              gradientFrom='#1a857c'
+              gradientTo='#8fe7b1'
+              image='/images/projects/coco/coco_desktop.png'
+              imageSmall='/images/projects/coco/coco_mobile.png'
+              github='https://github.com/YEGYouthTech/CourseCompanion'
+              contributors={[
+                {
+                  name: 'Oliver Chen',
+                  link: 'https://github.com/ochen1/',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Oliver_Chen.jpg',
+                },
+                {
+                  name: 'Evan Yin',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Evan_Yin.jpg',
+                },
+                {
+                  name: 'Justin Qian',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Justin_Qian.jpg',
+                },
+                {
+                  name: 'Elina Ajamian',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Elina_Ajamian.jpg',
+                },
+                {
+                  name: 'Heril Saha',
+                  link: 'https://github.com/HerilS',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Heril_Saha.jpg',
+                },
+                {
+                  name: 'Hao Cheng',
+                  link: 'https://github.com/pepeworm',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Hao_Cheng.jpg',
+                },
+                {
+                  name: 'Jason Li',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/Jason_Li.jpg',
+                },
+                {
+                  name: 'William Ma',
+                  avatar:
+                    'https://coco.yegyouth.tech/assets/images/team/William_Ma.png',
+                },
+                {
+                  name: 'and 4 more',
+                  link: 'https://coco.yegyouth.tech/about/',
+                  more: 4,
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
       <br />

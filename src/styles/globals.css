@@ -120,3 +120,16 @@
 body {
   @apply overflow-x-hidden;
 }
+
+.fadeInRight {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.notFadeInRight {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+.fadeInRight,
+.notFadeInRight {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
