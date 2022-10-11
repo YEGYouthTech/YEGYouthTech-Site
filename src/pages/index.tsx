@@ -287,6 +287,8 @@ export default function App() {
                   <a
                     href='https://forms.gle/zwErYCuSkw2PFQTXA'
                     className='rounded-[55px] bg-gradient-to-r from-purple-800/20 to-purple-900/20 px-8 py-3 font-bold text-purple-200/[.87] duration-300 hover:from-purple-800/40 hover:to-purple-900/40'
+                    target='_blank'
+                    rel='noreferrer'
                   >
                     Join
                   </a>
