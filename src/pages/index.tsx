@@ -405,14 +405,14 @@ export default function App() {
             Thank you to our sponsors for supporting our mission!
           </p>
           <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'>
-            <a href='https://www.cybera.ca/'>
+            <a href='https://www.cybera.ca/' target='_blank' rel='noreferrer'>
               <img
                 className='w-32'
                 src='https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png'
                 alt='Cybera'
               />
             </a>
-            <a href='https://mlh.io/'>
+            <a href='https://mlh.io/' target='_blank' rel='noreferrer'>
               <img
                 className='w-32'
                 src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png'
