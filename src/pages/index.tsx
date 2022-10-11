@@ -397,31 +397,33 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='mx-auto mt-24 max-w-6xl bg-black/[.94] py-8 px-4'>
-        <p className='text-center text-lg text-white/[.87]'>
-          Thank you to our sponsors for supporting our mission!
-        </p>
-        <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'>
-          <a href='https://www.cybera.ca/'>
-            <img
-              className='w-32'
-              src='https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png'
-              alt='Cybera'
-            />
-          </a>
-          <a href='https://mlh.io/'>
-            <img
-              className='w-32'
-              src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png'
-              alt='MLH'
-            />
-          </a>
+      <div className='bg-black/[.94]'>
+        <div className='mx-auto mt-24 max-w-6xl py-8 px-4'>
+          <p className='text-center text-lg text-white/[.87]'>
+            Thank you to our sponsors for supporting our mission!
+          </p>
+          <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'>
+            <a href='https://www.cybera.ca/'>
+              <img
+                className='w-32'
+                src='https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png'
+                alt='Cybera'
+              />
+            </a>
+            <a href='https://mlh.io/'>
+              <img
+                className='w-32'
+                src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png'
+                alt='MLH'
+              />
+            </a>
+          </div>
+          <hr className='my-8' />
+          <p className='text-center text-white/60'>
+            &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
+            All rights reserved.
+          </p>
         </div>
-        <hr className='my-8' />
-        <p className='text-center text-white/60'>
-          &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
-          All rights reserved.
-        </p>
       </div>
     </AnimationStateContext.Provider>
   );
