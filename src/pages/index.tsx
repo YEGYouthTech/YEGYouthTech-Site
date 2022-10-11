@@ -243,7 +243,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-5xl px-4'>
+      <div className='font-workSans mx-auto max-w-4xl px-4'>
         <div>
           <Fade up>
             <h1 className='mt-20 mb-6 text-center font-montserrat text-4xl font-bold text-purple-200/[.87]'>
@@ -252,7 +252,7 @@ export default function App() {
           </Fade>
           <div className='flex flex-col gap-12 text-center md:flex-row'>
             <Zoom>
-              <div className='flex flex-col'>
+              <div className='flex w-1/2 flex-col'>
                 <div className='grow-1 flex flex-col gap-4'>
                   <h1 className='text-3xl font-bold text-purple-200/[.87]'>
                     Join our Discord
@@ -273,7 +273,7 @@ export default function App() {
               </div>
             </Zoom>
             <Zoom>
-              <div className='flex flex-col'>
+              <div className='flex w-1/2 flex-col'>
                 <div className='grow-1 flex flex-col gap-4'>
                   <h1 className='text-3xl font-bold text-purple-200/[.87]'>
                     Join our mailing list
