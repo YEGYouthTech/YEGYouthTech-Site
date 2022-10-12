@@ -115,8 +115,8 @@ export default function App() {
           <ComponentOfTechnology
             name='Game Dev'
             direction='left'
-            gradientFrom='#e400ff'
-            gradientTo='#f50d5b'
+            gradientFrom='#f50d5b'
+            gradientTo='#e400ff'
           ></ComponentOfTechnology>
           <ComponentOfTechnology
             name='Networking'
