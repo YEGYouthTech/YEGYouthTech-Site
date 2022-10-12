@@ -28,6 +28,35 @@
   /* #endregion  /**======== Primary Color =========== */
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer base {
   /* inter var - latin */
   @font-face {
@@ -119,6 +148,11 @@
 
 body {
   @apply overflow-x-hidden;
+}
+
+.title {
+  -webkit-animation: bounce 5s infinite;
+  animation: bounce 5s infinite;
 }
 
 .fadeInRight {
