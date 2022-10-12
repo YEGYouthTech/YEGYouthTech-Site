@@ -6,9 +6,9 @@ export function HeroTitle() {
 
   return (
     <div className='absolute flex h-full w-full flex-col items-center justify-center'>
-      <div className='overflow-hidden'>
+      <div>
         <h1
-          className='h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[10vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
+          className='title h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[10vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
           style={{
             opacity: !animationState ? 0 : 1,
             transform: !animationState
@@ -20,7 +20,7 @@ export function HeroTitle() {
           YEGYouth.Tech
         </h1>
       </div>
-      <div className='overflow-hidden'>
+      <div>
         <h2
           className='font-wsans h-[1.2em] text-center text-[3.2vw] font-bold leading-none text-gray-100 drop-shadow-2xl'
           style={{
