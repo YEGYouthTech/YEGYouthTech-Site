@@ -369,34 +369,29 @@ export default function App() {
               id={5}
             />
           </div>
-          <div className='flex flex-wrap gap-6'>
-            <div className='flex flex-col gap-4'>
-              <div className='grow-1 flex flex-col gap-4'>
-                <Fade delay={200} left>
-                  <h1 className='text-3xl font-bold text-sky-200/[.87]'>
-                    Apply to be a team member
-                  </h1>
-                </Fade>
-                <Fade left duration={2000} delay={400}>
-                  <p className='text-lg text-gray-200/60'>
-                    We are always looking for new team members. If you are
-                    interested in joining our team, please fill out this form.
-                  </p>
-                </Fade>
-              </div>
-              <div className='mt-4'>
-                <Fade duration={2000} delay={600} left>
-                  <a
-                    href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                    className='inline-flex items-center justify-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    Apply to join the team <BsArrowRightCircle size={24} />
-                  </a>
-                </Fade>
-              </div>
-            </div>
+          <div className='flex flex-col justify-center items-center'>
+            <Fade delay={200} left>
+              <h1 className='text-3xl font-bold text-sky-200/[.87]'>
+                Apply to be a team member
+              </h1>
+            </Fade>
+            <Fade left duration={2000} delay={400}>
+              <p className='text-lg text-gray-200/60 text-center my-7'>
+                We are always looking for new team members.<br />If you are
+                interested in joining our team, please fill out this form.
+              </p>
+            </Fade>
+
+            <Fade duration={2000} delay={600} left>
+              <a
+                href='https://forms.gle/VEZaiWd1qpXvsRWt6'
+                className='inline-flex items-center m-auto gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Apply to join the team <BsArrowRightCircle size={24} />
+              </a>
+            </Fade>
           </div>
         </div>
       </div>
