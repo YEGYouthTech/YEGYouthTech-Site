@@ -93,7 +93,7 @@ export default function App() {
       <br />
       <br />
 
-      <div className='mx-auto max-w-5xl px-4 font-montserrat'>
+      <div className='mx-auto max-w-5xl px-4 font-montserrat' id="cot">
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
             <h1 className='mt-12 text-center text-4xl font-bold text-emerald-200/[.87]'>
@@ -170,7 +170,7 @@ export default function App() {
           </Zoom>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-5xl px-4'>
+      <div className='font-workSans mx-auto max-w-5xl px-4' id="projects">
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -243,7 +243,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-4xl px-4'>
+      <div className='font-workSans mx-auto max-w-4xl px-4' id="join-us">
         <div>
           <Fade up>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -298,7 +298,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-3xl px-2'>
+      <div className='font-workSans mx-auto max-w-3xl px-2' id="team">
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>

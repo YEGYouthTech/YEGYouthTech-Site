@@ -8,7 +8,7 @@ export function HeroTitle() {
     <div className='absolute flex h-full w-full flex-col items-center justify-center'>
       <div>
         <h1
-          className='title h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[10vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
+          className='animate-textFloat h-[1em] bg-gradient-to-br from-emerald-400 to-sky-500 bg-clip-text font-montserrat text-[10vw] font-extrabold leading-none text-transparent drop-shadow-2xl sm:text-[11vw]'
           style={{
             opacity: !animationState ? 0 : 1,
             transform: !animationState

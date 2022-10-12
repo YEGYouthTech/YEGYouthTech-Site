@@ -5,15 +5,16 @@ export default function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
   const { animationState } = useAnimationState();
 
-  const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "About": "#about" }, { "Projects": "#projects" }, { "Opportunities": "#opportunities" }, { "Puzzle Week": "#puzzle-week" }];
+  // const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "About": "#about" }, { "Opportunities": "#opportunities" }, { "Puzzle Week": "#puzzle-week" }];
+  const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "Join Us": "#join-us" }, { "Team": "#team" }];
 
-  function handleMenuClick() {
+  function handleClick() {
     setIsClicked((prev) => !prev);
   }
 
   return (
     <nav
-      className="fixed top-[2.5rem] right-[2.5rem] z-50 w-[14rem] bg-gradient-to-br from-emerald-400 to-sky-500 px-4 py-4 rounded-md"
+      className="fixed top-[2.5rem] tn:inset-x-0 tn:mx-auto md:left-auto md:translate-x-0 md:right-[2.5rem] z-50 w-[14rem] bg-neutral-900 px-4 py-4 rounded-md border-2 border-neutral-800"
       style={{
         opacity: !animationState ? 0 : 1,
         transform: !animationState
@@ -33,10 +34,10 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="w-9 h-6 flex flex-col items-center justify-between cursor-pointer" onClick={handleMenuClick}>
-          <span className="w-full h-[3px] bg-gray-900 rounded-md ml-auto" />
-          <span className="w-3/4 h-[3px] bg-gray-900 rounded-md ml-auto" />
-          <span className="w-2/4 h-[3px] bg-gray-900 rounded-md ml-auto" />
+        <div className="w-9 h-6 flex flex-col items-center justify-between cursor-pointer group" onClick={handleClick}>
+          <span className="w-full h-[3px] bg-gray-100/75 rounded-md ml-auto transition-colors duration-200 ease-in-out group-hover:bg-gray-100" />
+          <span className="w-3/4 h-[3px] bg-gray-100/75 rounded-md ml-auto transition-colors duration-200 ease-in-out group-hover:bg-gray-100" />
+          <span className="w-2/4 h-[3px] bg-gray-100/75 rounded-md ml-auto transition-colors duration-200 ease-in-out group-hover:bg-gray-100" />
         </div>
       </div>
 
@@ -56,13 +57,12 @@ export default function Navbar() {
                   key={index}
                   className={index > 0 && index < pageLinks.length - 1 ? "my-2" : "m-0"}
                 >
-                  <a href={data[1]} className="text-lg text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100">{data[0]}</a>
+                  <a href={data[1]} className="text-md text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100" onClick={handleClick}>{data[0]}</a>
                 </li>
               );
             })}
           </ul>
         </div>
       }
-    </nav>
-  );
+    </nav>);
 }

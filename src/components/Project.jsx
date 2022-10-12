@@ -112,7 +112,7 @@ export default function Project(props) {
             <img
               src={image}
               alt='Project screenshot'
-              className='project-img w-full'
+              className='animate-textFloat w-full'
             />
           </Fade>
         </div>
@@ -124,13 +124,13 @@ export default function Project(props) {
                 <img
                   src={image}
                   alt='Project screenshot'
-                  className='project-img w-3/4 -rotate-[8deg]'
+                  className='animate-textFloat w-3/4 -rotate-[8deg]'
                 />
               </div>
               <img
                 src={imageSmall}
                 alt='Project screenshot'
-                className='project-img absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
+                className='animate-textFloat absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
               />
             </div>
           </Fade>

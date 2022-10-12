@@ -6,6 +6,13 @@ module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      'tn': '320px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      '2xl': '1536px',
+    },
     extend: {
       fontFamily: {
         primaryOld: ['Inter', ...fontFamily.sans],
@@ -63,10 +70,22 @@ module.exports = {
             backgroundPosition: '700px 0',
           },
         },
+        textFloat: {
+          '0%': {
+            transform: 'translateY(0px)',
+          },
+          '50%': {
+            transform: 'translateY(-16px)',
+          },
+          '100%': {
+            transform: 'translateY(0px)',
+          },
+        }
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        textFloat: 'textFloat 5s linear infinite',
       },
     },
   },
