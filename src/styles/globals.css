@@ -150,7 +150,7 @@ body {
   @apply overflow-x-hidden;
 }
 
-.title {
+.title, .project-img {
   -webkit-animation: bounce 5s infinite;
   animation: bounce 5s infinite;
 }

@@ -90,12 +90,12 @@ export default function Project(props) {
                   className='h-8 w-8 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'
                 />
               )) || (
-                <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
-                  <span className='text-md text-gray-300'>
-                    {contributor.more}+
-                  </span>
-                </div>
-              )}
+                  <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
+                    <span className='text-md text-gray-300'>
+                      {contributor.more}+
+                    </span>
+                  </div>
+                )}
               <div className='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
                 <span className='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
                   {contributor.name}
@@ -109,7 +109,7 @@ export default function Project(props) {
       {(image && !imageSmall && (
         <div className='flex w-full flex-col items-center justify-center md:w-1/2'>
           <Fade right>
-            <img src={image} alt='Project screenshot' className='w-full' />
+            <img src={image} alt='Project screenshot' className='project-img w-full' />
           </Fade>
         </div>
       )) ||
@@ -120,13 +120,13 @@ export default function Project(props) {
                 <img
                   src={image}
                   alt='Project screenshot'
-                  className='w-3/4 -rotate-[8deg]'
+                  className='project-img w-3/4 -rotate-[8deg]'
                 />
               </div>
               <img
                 src={imageSmall}
                 alt='Project screenshot'
-                className='absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
+                className='project-img absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
               />
             </div>
           </Fade>
