@@ -30,11 +30,11 @@ export default function Project(props) {
         className='notFadeInRight flex w-full flex-col items-center justify-center md:w-1/2'
       >
         <div className='flex w-full flex-col items-center justify-center'>
-          <div className='relative flex h-48 w-full justify-center p-8'>
+          <div className='relative flex max-h-[12rem] w-full justify-center p-8'>
             <img
               src={logo}
               alt={`${name} logo`}
-              className='w-fill h-auto max-h-full'
+              className='h-auto h-fit w-fit max-h-full max-w-full'
             />
           </div>
           <h2
@@ -90,12 +90,12 @@ export default function Project(props) {
                   className='h-8 w-8 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'
                 />
               )) || (
-                  <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
-                    <span className='text-md text-gray-300'>
-                      {contributor.more}+
-                    </span>
-                  </div>
-                )}
+                <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
+                  <span className='text-md text-gray-300'>
+                    {contributor.more}+
+                  </span>
+                </div>
+              )}
               <div className='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
                 <span className='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
                   {contributor.name}
@@ -109,7 +109,11 @@ export default function Project(props) {
       {(image && !imageSmall && (
         <div className='flex w-full flex-col items-center justify-center md:w-1/2'>
           <Fade right>
-            <img src={image} alt='Project screenshot' className='project-img w-full' />
+            <img
+              src={image}
+              alt='Project screenshot'
+              className='project-img w-full'
+            />
           </Fade>
         </div>
       )) ||
