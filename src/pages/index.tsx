@@ -154,7 +154,7 @@ export default function App() {
               <h1 className='mb-4 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
                 Did you know?
               </h1>
-              <p className='leading-7 text-white/[.89]'>
+              <p className='leading-7 text-white/[.89] text-center'>
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
@@ -364,6 +364,7 @@ export default function App() {
             />
             <ExecMember
               name='TBD'
+              title=""
               image='/images/team/exec/silhouette.png'
               id={5}
             />
