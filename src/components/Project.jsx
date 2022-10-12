@@ -34,7 +34,7 @@ export default function Project(props) {
             <img
               src={logo}
               alt={`${name} logo`}
-              className='h-auto h-fit w-fit max-h-full max-w-full'
+              className='h-auto h-fit max-h-full w-fit max-w-full'
             />
           </div>
           <h2
@@ -112,26 +112,28 @@ export default function Project(props) {
             <img
               src={image}
               alt='Project screenshot'
-              className='animate-textFloat w-full'
+              className='w-full animate-textFloat'
             />
           </Fade>
         </div>
       )) ||
         (image && imageSmall && (
           <Fade right>
-            <div className='relative mt-24 flex w-full flex-col items-start justify-center md:mt-0 md:w-1/2'>
-              <div>
+            <div className='relative flex w-full flex-col items-start justify-center pt-24 md:mt-0 md:w-1/2'>
+              <div className='animate-textFloat'>
                 <img
                   src={image}
                   alt='Project screenshot'
-                  className='animate-textFloat w-3/4 -rotate-[8deg]'
+                  className='w-3/4 -rotate-[8deg]'
                 />
               </div>
-              <img
-                src={imageSmall}
-                alt='Project screenshot'
-                className='animate-textFloat absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
-              />
+              <div className='h-full w-full animate-textFloat'>
+                <img
+                  src={imageSmall}
+                  alt='Project screenshot'
+                  className='absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
+                />
+              </div>
             </div>
           </Fade>
         )) || <></>}
