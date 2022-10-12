@@ -93,7 +93,7 @@ export default function App() {
       <br />
       <br />
 
-      <div className='mx-auto max-w-5xl px-4 font-montserrat' id="cot">
+      <div className='mx-auto max-w-5xl px-4 font-montserrat' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
             <h1 className='mt-12 text-center text-4xl font-bold text-emerald-200/[.87]'>
@@ -154,7 +154,7 @@ export default function App() {
               <h1 className='mb-4 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
                 Did you know?
               </h1>
-              <p className='leading-7 text-white/[.89] text-center'>
+              <p className='text-center leading-7 text-white/[.89]'>
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
@@ -170,7 +170,7 @@ export default function App() {
           </Zoom>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-5xl px-4' id="projects">
+      <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -243,7 +243,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-4xl px-4' id="join-us">
+      <div className='font-workSans mx-auto max-w-4xl px-4' id='join-us'>
         <div>
           <Fade up>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -298,7 +298,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-3xl px-2' id="team">
+      <div className='font-workSans mx-auto max-w-3xl px-2' id='team'>
         <div>
           <Fade bottom>
             <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -364,28 +364,30 @@ export default function App() {
             />
             <ExecMember
               name='TBD'
-              title=""
+              title=''
               image='/images/team/exec/silhouette.png'
               id={5}
             />
           </div>
-          <div className='flex flex-col justify-center items-center'>
+          <div className='flex flex-col items-center justify-center'>
             <Fade delay={200} left>
               <h1 className='text-3xl font-bold text-sky-200/[.87]'>
                 Apply to be a team member
               </h1>
             </Fade>
             <Fade left duration={2000} delay={400}>
-              <p className='text-lg text-gray-200/60 text-center my-7'>
-                We are always looking for new team members.<br />If you are
-                interested in joining our team, please fill out this form.
+              <p className='my-7 text-center text-lg text-gray-200/60'>
+                We are always looking for new team members.
+                <br />
+                If you are interested in joining our team, please fill out this
+                form.
               </p>
             </Fade>
 
             <Fade duration={2000} delay={600} left>
               <a
                 href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                className='inline-flex items-center m-auto gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
+                className='m-auto inline-flex items-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
                 target='_blank'
                 rel='noreferrer'
               >
