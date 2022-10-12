@@ -56,6 +56,7 @@ export default function App() {
     <AnimationStateContext.Provider
       value={{ animationState, setAnimationState }}
     >
+      <p className='select-none text-transparent'>Hello world</p>
       <Navbar />
 
       <div className='relative h-screen w-screen overflow-hidden'>
