@@ -370,12 +370,12 @@ export default function App() {
             />
           </div>
           <div className='flex flex-col items-center justify-center'>
-            <Fade delay={200} left>
+            <Fade left duration={200} delay={200}>
               <h1 className='text-3xl font-bold text-sky-200/[.87]'>
                 Apply to be a team member
               </h1>
             </Fade>
-            <Fade left duration={2000} delay={400}>
+            <Fade left duration={200} delay={400}>
               <p className='my-7 text-center text-lg text-gray-200/60'>
                 We are always looking for new team members.
                 <br />
@@ -384,7 +384,7 @@ export default function App() {
               </p>
             </Fade>
 
-            <Fade duration={2000} delay={600} left>
+            <Fade left duration={200} delay={600}>
               <a
                 href='https://forms.gle/VEZaiWd1qpXvsRWt6'
                 className='m-auto inline-flex items-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
