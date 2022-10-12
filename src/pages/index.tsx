@@ -376,7 +376,7 @@ export default function App() {
               </h1>
             </Fade>
             <Fade left duration={200} delay={400}>
-              <p className='my-7 text-center text-lg text-gray-200/60'>
+              <p className='my-7 text-lg text-gray-200/60 md:text-center'>
                 We are always looking for new team members.
                 <br />
                 If you are interested in joining our team, please fill out this
