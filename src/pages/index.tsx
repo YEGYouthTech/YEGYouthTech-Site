@@ -88,12 +88,6 @@ export default function App() {
         <HeroTitle />
       </div>
 
-      <div className='mx-auto max-w-sm'></div>
-
-      <br />
-      <br />
-      <br />
-
       <div className='mx-auto max-w-5xl px-4 font-montserrat' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
