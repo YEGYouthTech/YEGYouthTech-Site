@@ -147,9 +147,10 @@ export default function App() {
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
-                  className='text-sky-400/[.87] underline'
+                  className='animate-underline text-sky-400'
                 >
                   the U.S. BLS
+                  <span className="text-underline"></span>
                 </a>
                 , jobs for information security analysts will grow by 35% from
                 2021 to 2031. This rate is 7 times faster than the average

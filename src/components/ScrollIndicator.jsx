@@ -16,7 +16,7 @@ export function ScrollIndicator() {
       }}
     >
       <div
-        className='bg-gray animate-bounce-mini flex cursor-pointer flex-row gap-2 rounded-full p-2'
+        className='bg-gray flex cursor-pointer flex-row gap-2 rounded-full p-2'
         onClick={() => {
           window.scrollTo({
             top: window.innerHeight,
@@ -27,7 +27,7 @@ export function ScrollIndicator() {
         <div className='rounded-full p-1 shadow-lg'>
           <ChevronDownIcon className='h-4 w-4 text-sky-400' />
         </div>
-        <span className='pr-2 text-sky-400'>Scroll Down</span>
+        <span className='animate-underline text-sky-400'>Scroll Down<span className="text-underline"></span></span>
       </div>
     </div>
   );
