@@ -62,24 +62,18 @@ export default function App() {
       <div className='relative h-screen w-screen overflow-hidden'>
         <StarBG />
         <EdmontonLayer
-          // image="https://media.discordapp.net/attachments/746177266471534695/1011395732823089214/output2.png"
-          // image='https://i.imgur.com/NE6Sqs2.png'
           image='/images/landing/output2.png'
           parallaxModifier={40}
           animationDelay={0.4}
           brightness={70}
         />
         <EdmontonLayer
-          // image="https://media.discordapp.net/attachments/746177266471534695/1011395732424634439/output1.png"
-          // image='https://i.imgur.com/NiNYv7m.png'
           image='/images/landing/output1.png'
           parallaxModifier={20}
           animationDelay={0.2}
           brightness={60}
         />
         <EdmontonLayer
-          // image="https://media.discordapp.net/attachments/746177266471534695/1011395732017791007/output0.png"
-          // image='https://i.imgur.com/cxTWGEZ.png'
           image='/images/landing/output0.png'
           parallaxModifier={0}
           animationDelay={0}
