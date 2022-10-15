@@ -27,7 +27,7 @@ export default function Navbar() {
         <div>
           <a href="#">
             <img
-              src="https://avatars.githubusercontent.com/u/113301687?s=200&v=4"
+              src="images/others/logo.png"
               alt="Logo"
               className="rounded-md w-11"
             />
