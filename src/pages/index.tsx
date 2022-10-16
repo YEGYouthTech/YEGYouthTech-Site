@@ -147,6 +147,8 @@ export default function App() {
                 According to{' '}
                 <a
                   href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
+                  target='_blank'
+                  rel='noreferrer'
                   className='animate-underline text-sky-400'
                 >
                   the U.S. BLS
@@ -255,6 +257,8 @@ export default function App() {
                 <div className='mt-8'>
                   <a
                     href='https://discord.gg/szjzhYkT9e'
+                    target='_blank'
+                    rel='noreferrer'
                     className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
                   >
                     Join
