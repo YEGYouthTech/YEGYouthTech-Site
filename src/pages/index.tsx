@@ -7,6 +7,7 @@ import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
 import ExecMember from '../components/ExecMember';
 import { HeroTitle } from '../components/HeroTitle';
+import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import { StarBG } from '../components/StarBG';
@@ -82,17 +83,16 @@ export default function App() {
         <HeroTitle />
       </div>
 
-      <div className='mx-auto max-w-5xl px-4 font-montserrat' id='cot'>
+      <div className='mx-auto max-w-5xl px-4 mt-6 font-montserrat' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='mt-12 text-center text-4xl font-bold text-emerald-200/[.87]'>
+            <h1 className='mt-12 text-center text-4xl font-bold bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-transparent'>
               Components of Technology
             </h1>
           </Fade>
           <Fade delay={300} bottom>
             <p className='mt-4 mb-16 text-center text-lg text-gray-200/60'>
-              Technology isn't a monolithic industry. Rather, its components are
-              diverse and complex.
+              Technology isn't a monolithic industry.<br />Rather, its components are diverse and complex.
             </p>
           </Fade>
           <ComponentOfTechnology
@@ -131,35 +131,6 @@ export default function App() {
             gradientFrom='#555'
             gradientTo='#555'
           ></ComponentOfTechnology>
-          <Fade bottom>
-            <p className='my-4 text-center text-lg text-gray-200/60'>
-              Our mission is to foster an appreciation for the ways technology
-              has changed our lives, inspiring and empowering the next
-              generation of technologists in our community.
-            </p>
-          </Fade>
-          <Zoom>
-            <div className='mx-auto mt-8 max-w-lg rounded-2xl bg-gradient-to-r from-sky-200/10 to-sky-300/10 p-8 shadow-lg backdrop-blur'>
-              <h1 className='mb-4 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
-                Did you know?
-              </h1>
-              <p className='text-center leading-7 text-white/[.89]'>
-                According to{' '}
-                <a
-                  href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='animate-underline text-sky-400'
-                >
-                  the U.S. BLS
-                  <span className="text-underline"></span>
-                </a>
-                , jobs for information security analysts will grow by 35% from
-                2021 to 2031. This rate is 7 times faster than the average
-                employment growth rate of all occupations nationwide.
-              </p>
-            </div>
-          </Zoom>
         </div>
       </div>
       <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
@@ -235,69 +206,20 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='font-workSans mx-auto max-w-4xl px-4' id='join-us'>
-        <div>
-          <Fade up>
-            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
-              Join us!
-            </h1>
-          </Fade>
-          <div className='flex flex-col gap-12 text-center md:flex-row'>
-            <Zoom>
-              <div className='flex w-full flex-col md:w-1/2'>
-                <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
-                    Join our Discord
-                  </h1>
-                  <p className='text-lg text-gray-200/60'>
-                    We have a Discord server where we discuss tech, share
-                    resources, and collaborate on projects.
-                  </p>
-                </div>
-                <div className='mt-8'>
-                  <a
-                    href='https://discord.gg/szjzhYkT9e'
-                    target='_blank'
-                    rel='noreferrer'
-                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                  >
-                    Join
-                  </a>
-                </div>
-              </div>
-            </Zoom>
-            <Zoom>
-              <div className='flex w-full flex-col md:w-1/2'>
-                <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
-                    Subscribe to our newsletter
-                  </h1>
-                  <p className='text-lg text-gray-200/60'>
-                    We send out emails about our events, workshops, and
-                    opportunities.
-                  </p>
-                </div>
-                <div className='mt-8'>
-                  <a
-                    href='https://forms.gle/zwErYCuSkw2PFQTXA'
-                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    Subscribe
-                  </a>
-                </div>
-              </div>
-            </Zoom>
-          </div>
-        </div>
-      </div>
-      <div className='font-workSans mx-auto max-w-3xl px-2' id='team'>
+
+      <div className='font-workSans mx-auto max-w-3xl px-2' id='about'>
         <div>
           <Fade bottom>
-            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
-              Our Team
+            <h1 className='mt-32 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+              About Us
             </h1>
+          </Fade>
+          <Fade bottom>
+            <p className='my-4 text-center text-lg text-gray-200/60'>
+              Our mission is to foster an appreciation for the ways technology
+              has changed our lives, inspiring and empowering the next
+              generation of technologists in our community.
+            </p>
           </Fade>
           <div className='flex flex-wrap justify-center'>
             <ExecMember
@@ -352,7 +274,7 @@ export default function App() {
             />
             <ExecMember
               name='Frank Li'
-              title='Director of Competition Devt'
+              title='Director of Competition Dev'
               image='/images/team/exec/Frank_Li.jpg'
               id={4}
             />
@@ -363,31 +285,113 @@ export default function App() {
               id={5}
             />
           </div>
-          <div className='flex flex-col items-center justify-center'>
-            <Fade left duration={200} delay={200}>
-              <h1 className='text-3xl font-bold text-sky-200/[.87]'>
-                Apply to be a team member
-              </h1>
-            </Fade>
-            <Fade left duration={200} delay={400}>
-              <p className='my-7 text-lg text-gray-200/60 md:text-center'>
-                We are always looking for new team members.
-                <br />
-                If you are interested in joining our team, please fill out this
-                form.
-              </p>
-            </Fade>
 
-            <Fade left duration={200} delay={600}>
-              <a
-                href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                className='m-auto inline-flex items-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Apply to join the team <BsArrowRightCircle size={24} />
-              </a>
-            </Fade>
+          <Zoom>
+            <InfoCard
+              title="Did You Know?"
+              body={
+                <div>
+                  According to{' '}
+                  <a
+                    href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='animate-underline text-blue-400'
+                  >
+                    the U.S. BLS
+                    <span className="text-underline"></span>
+                  </a>
+                  , jobs for information security analysts will grow by 35% from
+                  2021 to 2031. This rate is 7 times faster than the average
+                  employment growth rate of all occupations nationwide.
+                </div>
+              }
+            />
+          </Zoom>
+        </div>
+      </div>
+
+      <div className='font-workSans mx-auto max-w-4xl px-4' id='join-us'>
+        <div>
+          <Fade up>
+            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+              Join Us!
+            </h1>
+          </Fade>
+          <div className='flex flex-col gap-12 text-center md:flex-row'>
+            <Zoom>
+              <div className='flex w-full flex-col md:w-1/2'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                    Join our Discord
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We have a Discord server where we discuss tech, share
+                    resources, and collaborate on projects.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <a
+                    href='https://discord.gg/szjzhYkT9e'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
+                  >
+                    Join
+                  </a>
+                </div>
+              </div>
+            </Zoom>
+            <Zoom>
+              <div className='flex w-full flex-col md:w-1/2'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                    Subscribe to our newsletter
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We send out emails about our events, workshops, and
+                    opportunities.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <a
+                    href='https://forms.gle/zwErYCuSkw2PFQTXA'
+                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Subscribe
+                  </a>
+                </div>
+              </div>
+            </Zoom>
+
+            <div className='flex flex-col items-center justify-center'>
+              <Fade left duration={200} delay={200}>
+                <h1 className='text-3xl font-bold text-sky-200/[.87]'>
+                  Apply to be a team member
+                </h1>
+              </Fade>
+              <Fade left duration={200} delay={400}>
+                <p className='my-7 text-lg text-gray-200/60 md:text-center'>
+                  We are always looking for new team members.
+                  <br />
+                  If you are interested in joining our team, please fill out this
+                  form.
+                </p>
+              </Fade>
+
+              <Fade left duration={200} delay={600}>
+                <a
+                  href='https://forms.gle/VEZaiWd1qpXvsRWt6'
+                  className='m-auto inline-flex items-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Apply to join the team <BsArrowRightCircle size={24} />
+                </a>
+              </Fade>
+            </div>
           </div>
         </div>
       </div>

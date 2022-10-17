@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { useAnimationState } from '../context/AnimationStateContext';
 
 export default function Navbar() {
@@ -6,7 +7,7 @@ export default function Navbar() {
   const { animationState } = useAnimationState();
 
   // const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "About": "#about" }, { "Opportunities": "#opportunities" }, { "Puzzle Week": "#puzzle-week" }];
-  const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "Join Us": "#join-us" }, { "Team": "#team" }];
+  const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "About": "#about" }, { "Join Us": "#join-us" }];
 
   function handleClick() {
     setIsClicked((prev) => !prev);
@@ -49,7 +50,7 @@ export default function Navbar() {
 
               for (let i in links) {
                 data.push(i);
-                data.push(links[i])
+                data.push(links[i]);
               }
 
               return (
@@ -57,8 +58,7 @@ export default function Navbar() {
                   key={index}
                   className={index > 0 && index < pageLinks.length - 1 ? "my-2" : "m-0"}
                 >
-                  <a href={data[1]} className="text-md text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100" onClick={handleClick}>{data[0]}</a>
-                </li>
+                  <a href={data[1]} className="text-md text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100" onClick={handleClick}>{data[0]}</a>                </li>
               );
             })}
           </ul>

@@ -45,11 +45,11 @@ export default function Project(props) {
           >
             {name}
           </h2>
-          <p className='mt-4 text-center leading-7 text-white/[.87]'>
+          <p className='mt-4 text-center leading-7 text-gray-200/60'>
             {description}
           </p>
           {disclaimer && (
-            <p className='mt-4 text-center text-sm leading-7 text-gray-300/[.87]'>
+            <p className='mt-4 text-center text-sm leading-7 text-gray-200/60'>
               {disclaimer}
             </p>
           )}
@@ -58,19 +58,19 @@ export default function Project(props) {
               href={link}
               target='_blank'
               rel='noopener noreferrer'
-              className='flex flex-row items-center gap-1 text-center text-blue-500 hover:text-blue-400'
+              className='flex flex-row items-center gap-1 text-center text-blue-400'
             >
               <AiOutlineLink size={24} />
-              <span className='text-xl'>Live Demo</span>
+              <span className='animate-underline text-xl'>Live Demo<span className="text-underline"></span></span>
             </a>
             <a
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='flex flex-row items-center gap-1 text-center text-blue-500 hover:text-blue-400'
+              className='flex flex-row items-center gap-1 text-center text-blue-400'
             >
               <AiFillGithub size={24} />
-              <span className='text-xl'>GitHub</span>
+              <span className='animate-underline text-xl'>GitHub<span className="text-underline"></span></span>
             </a>
           </div>
         </div>
@@ -90,12 +90,12 @@ export default function Project(props) {
                   className='h-8 w-8 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'
                 />
               )) || (
-                <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
-                  <span className='text-md text-gray-300'>
-                    {contributor.more}+
-                  </span>
-                </div>
-              )}
+                  <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
+                    <span className='text-md text-gray-300'>
+                      {contributor.more}+
+                    </span>
+                  </div>
+                )}
               <div className='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
                 <span className='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
                   {contributor.name}
