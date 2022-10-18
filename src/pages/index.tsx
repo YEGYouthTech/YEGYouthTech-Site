@@ -83,16 +83,18 @@ export default function App() {
         <HeroTitle />
       </div>
 
-      <div className='mx-auto max-w-5xl px-4 mt-6 font-montserrat' id='cot'>
+      <div className='mx-auto mt-6 max-w-5xl px-4' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='mt-12 text-center text-4xl font-bold bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-transparent'>
+            <h1 className='mt-12 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Components of Technology
             </h1>
           </Fade>
           <Fade delay={300} bottom>
-            <p className='mt-4 mb-16 text-center text-lg text-gray-200/60'>
-              Technology isn't a monolithic industry.<br />Rather, its components are diverse and complex.
+            <p className='mt-6 mb-8 text-center text-lg text-white/[.89]'>
+              Technology isn't a monolithic industry.
+              <br />
+              Rather, its components are diverse and complex.
             </p>
           </Fade>
           <ComponentOfTechnology
@@ -147,8 +149,8 @@ export default function App() {
               disclaimer='Only available for students of Old Scona Academic.'
               logo='/images/projects/coco/logo.png'
               link='https://coco.yegyouth.tech/'
-              gradientFrom='#1a857c'
-              gradientTo='#8fe7b1'
+              gradientFrom='sky-300'
+              gradientTo='emerald-300'
               image='/images/projects/coco/coco_desktop.png'
               imageSmall='/images/projects/coco/coco_mobile.png'
               github='https://github.com/YEGYouthTech/CourseCompanion'
@@ -215,7 +217,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade bottom>
-            <p className='my-4 text-center text-lg text-gray-200/60'>
+            <p className='my-4 text-center text-lg text-white/[.89]'>
               Our mission is to foster an appreciation for the ways technology
               has changed our lives, inspiring and empowering the next
               generation of technologists in our community.
@@ -288,7 +290,7 @@ export default function App() {
 
           <Zoom>
             <InfoCard
-              title="Did You Know?"
+              title='Did You Know?'
               body={
                 <div>
                   According to{' '}
@@ -299,7 +301,7 @@ export default function App() {
                     className='animate-underline text-blue-400'
                   >
                     the U.S. BLS
-                    <span className="text-underline"></span>
+                    <span className='text-underline'></span>
                   </a>
                   , jobs for information security analysts will grow by 35% from
                   2021 to 2031. This rate is 7 times faster than the average
@@ -376,8 +378,8 @@ export default function App() {
                 <p className='my-7 text-lg text-gray-200/60 md:text-center'>
                   We are always looking for new team members.
                   <br />
-                  If you are interested in joining our team, please fill out this
-                  form.
+                  If you are interested in joining our team, please fill out
+                  this form.
                 </p>
               </Fade>
 

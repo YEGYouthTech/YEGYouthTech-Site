@@ -38,14 +38,10 @@ export default function Project(props) {
             />
           </div>
           <h2
-            className='!bg-clip-text text-center text-3xl font-bold text-transparent'
-            style={{
-              background: `linear-gradient(90deg, ${gradientFrom}, ${gradientTo})`,
-            }}
-          >
+            className={`text-center text-3xl font-bold bg-gradient-to-r from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}>
             {name}
           </h2>
-          <p className='mt-4 text-center leading-7 text-gray-200/60'>
+          <p className='mt-4 text-center leading-7 text-white/[.89]'>
             {description}
           </p>
           {disclaimer && (
