@@ -38,7 +38,8 @@ export default function Project(props) {
             />
           </div>
           <h2
-            className={`text-center text-3xl font-bold bg-gradient-to-r from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}>
+            className={`bg-gradient-to-r text-center text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
+          >
             {name}
           </h2>
           <p className='mt-4 text-center leading-7 text-white/[.89]'>
@@ -57,7 +58,9 @@ export default function Project(props) {
               className='flex flex-row items-center gap-1 text-center text-blue-400'
             >
               <AiOutlineLink size={24} />
-              <span className='animate-underline text-xl'>Live Demo<span className="text-underline"></span></span>
+              <span className='animate-underline text-xl'>
+                Live Demo<span className='text-underline'></span>
+              </span>
             </a>
             <a
               href={github}
@@ -66,7 +69,9 @@ export default function Project(props) {
               className='flex flex-row items-center gap-1 text-center text-blue-400'
             >
               <AiFillGithub size={24} />
-              <span className='animate-underline text-xl'>GitHub<span className="text-underline"></span></span>
+              <span className='animate-underline text-xl'>
+                GitHub<span className='text-underline'></span>
+              </span>
             </a>
           </div>
         </div>
@@ -86,12 +91,12 @@ export default function Project(props) {
                   className='h-8 w-8 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'
                 />
               )) || (
-                  <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
-                    <span className='text-md text-gray-300'>
-                      {contributor.more}+
-                    </span>
-                  </div>
-                )}
+                <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
+                  <span className='text-md text-gray-300'>
+                    {contributor.more}+
+                  </span>
+                </div>
+              )}
               <div className='absolute bottom-0 left-1/2 mb-9 hidden -translate-x-1/2 flex-col items-center group-hover:flex'>
                 <span className='relative z-10 whitespace-nowrap bg-black/80 p-2 text-xs leading-none text-white shadow-lg'>
                   {contributor.name}

@@ -1,6 +1,7 @@
-import { useAnimationState } from '../context/AnimationStateContext';
 import React from 'react';
 import Starback from 'starback';
+
+import { useAnimationState } from '../context/AnimationStateContext';
 
 export const StarBG = (props) => {
   const canvasRef = React.useRef(null);
@@ -70,7 +71,7 @@ export const StarBG = (props) => {
       ></div>
       <canvas
         ref={canvasRef}
-        className={`w-full h-screen fixed inset-0 transition-opacity duration-[1000ms] delay-[1500ms]`}
+        className="w-full h-screen fixed inset-0 transition-opacity duration-[1000ms] delay-[1500ms]"
         style={{
           zIndex: -1,
           opacity: !animationState ? 0 : 1,

@@ -20,7 +20,7 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/ScrollIndicator.jsx", "src/components/StarBG.jsx", "src/components/Project.jsx", "src/components/Navbar.jsx", "src/components/InfoCard.jsx"],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }

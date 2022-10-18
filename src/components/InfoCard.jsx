@@ -6,9 +6,7 @@ export default function InfoCard({ title, body }) {
       <h1 className='mb-4 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-2xl font-bold text-transparent'>
         {title}
       </h1>
-      <div className='text-center leading-7 text-white/[.89]'>
-        {body}
-      </div>
+      <div className='text-center leading-7 text-white/[.89]'>{body}</div>
     </div>
   );
 }

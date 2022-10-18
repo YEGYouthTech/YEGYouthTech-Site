@@ -27,7 +27,9 @@ export function ScrollIndicator() {
         <div className='rounded-full p-1 shadow-lg'>
           <ChevronDownIcon className='h-4 w-4 text-blue-400' />
         </div>
-        <span className='animate-underline text-blue-400'>Scroll Down<span className="text-underline"></span></span>
+        <span className='animate-underline text-blue-400'>
+          Scroll Down<span className='text-underline'></span>
+        </span>
       </div>
     </div>
   );
