@@ -43,7 +43,7 @@ export default function ComponentOfTechnology(props) {
 
   return (
     <div className={`${customMargin ? customMargin : 'my-[8vh]'} opacity-[.87]`}>
-      <h1
+      <h2
         className='align-right !bg-clip-text pb-8 text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl'
         ref={ref}
         style={{
@@ -53,7 +53,7 @@ export default function ComponentOfTechnology(props) {
         }}
       >
         {name}
-      </h1>
+      </h2>
       <div
         className='w-full overflow-hidden'
         ref={ref2}

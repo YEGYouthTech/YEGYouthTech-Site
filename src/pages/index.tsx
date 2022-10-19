@@ -10,6 +10,7 @@ import { HeroTitle } from '../components/HeroTitle';
 import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
+import SectionBreak from '../components/SectionBreak';
 import { StarBG } from '../components/StarBG';
 import { AnimationStateContext } from '../context/AnimationStateContext';
 
@@ -90,7 +91,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade delay={300} bottom>
-            <p className='mt-6 text-center text-lg text-white/[.89]'>
+            <p className='mt-6 mb-10 text-center text-lg text-white/[.89]'>
               Technology isn't a monolithic industry.
               <br />
               Rather, its components are diverse and complex.
@@ -101,7 +102,7 @@ export default function App() {
             direction='right'
             gradientFrom='#05cafe'
             gradientTo='#2f32cf'
-            customMargin='mt-10'
+            customMargin='mt-0'
           ></ComponentOfTechnology>
           <ComponentOfTechnology
             name='Game Dev'
@@ -116,7 +117,7 @@ export default function App() {
             gradientTo='#DD2476'
           ></ComponentOfTechnology>
           <ComponentOfTechnology
-            name='Web / App Dev'
+            name='Web & App Dev'
             direction='left'
             gradientFrom='#ee0979'
             gradientTo='#ff6a00'
@@ -130,12 +131,15 @@ export default function App() {
           <ComponentOfTechnology
             name='Machine Learning'
             direction='left'
-            gradientFrom='#555'
+            gradientFrom='#e5e7eb99'
             gradientTo='#555'
             customMargin='mb-0'
           ></ComponentOfTechnology>
         </div>
       </div>
+
+      <SectionBreak customMargin='mt-[7.5rem] mb-28' />
+
       <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
         <div>
           <Fade bottom>
@@ -210,10 +214,12 @@ export default function App() {
         </div>
       </div>
 
+      <SectionBreak />
+
       <div className='font-workSans mx-auto max-w-3xl px-2' id='about'>
         <div>
           <Fade bottom>
-            <h1 className='mt-32 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               About Us
             </h1>
           </Fade>
@@ -314,10 +320,12 @@ export default function App() {
         </div>
       </div>
 
-      <div className='font-workSans mx-auto max-w-4xl px-4' id='join-us'>
+      <SectionBreak />
+
+      <div className='font-workSans mx-auto max-w-4xl px-4 mb-12' id='join-us'>
         <div>
           <Fade up>
-            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Join Us!
             </h1>
           </Fade>
@@ -398,8 +406,9 @@ export default function App() {
           </div>
         </div>
       </div>
+
       <div className='bg-black/[.94]'>
-        <div className='mx-auto mt-24 max-w-6xl py-8 px-4'>
+        <div className='mx-auto max-w-6xl py-8 px-4'>
           <p className='text-center text-lg text-white/[.87]'>
             Thank you to our sponsors for supporting our mission!
           </p>
@@ -419,7 +428,7 @@ export default function App() {
               />
             </a>
           </div>
-          <hr className='my-8' />
+          <hr className='my-8 w-24 m-auto border-gray-200/60' />
           <p className='text-center text-white/60'>
             &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
             All rights reserved.

@@ -71,7 +71,7 @@ export default function Navbar() {
                 >
                   <a
                     href={data[1]}
-                    className='text-md text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100'
+                    className='text-[1.125rem] text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100'
                     onClick={handleClick}
                   >
                     {data[0]}
