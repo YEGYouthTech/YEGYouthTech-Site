@@ -1,7 +1,13 @@
 import React from 'react';
 
 export default function ComponentOfTechnology(props) {
-  const { name, gradientFrom, gradientTo, direction } = props;
+  const {
+    name,
+    gradientFrom,
+    gradientTo,
+    direction,
+    customMargin,
+  } = props;
   const [scrollState, setScrollState] = React.useState(1);
   const ref = React.useRef(null);
   const ref2 = React.useRef(null);
@@ -36,7 +42,7 @@ export default function ComponentOfTechnology(props) {
   });
 
   return (
-    <div className='my-[8vh] opacity-[.87]'>
+    <div className={`${customMargin ? customMargin : 'my-[8vh]'} opacity-[.87]`}>
       <h1
         className='align-right !bg-clip-text pb-8 text-4xl font-bold text-transparent sm:text-5xl md:text-6xl lg:text-7xl'
         ref={ref}

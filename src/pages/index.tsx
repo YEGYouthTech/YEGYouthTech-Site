@@ -57,7 +57,6 @@ export default function App() {
     <AnimationStateContext.Provider
       value={{ animationState, setAnimationState }}
     >
-      <p className='select-none text-transparent'>Hello world</p>
       <Navbar />
 
       <div className='relative h-screen w-screen overflow-hidden'>
@@ -66,7 +65,7 @@ export default function App() {
           image='/images/landing/output2.png'
           parallaxModifier={40}
           animationDelay={0.4}
-          brightness={70}
+          brightness={65}
         />
         <EdmontonLayer
           image='/images/landing/output1.png'
@@ -91,7 +90,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade delay={300} bottom>
-            <p className='mt-6 mb-8 text-center text-lg text-white/[.89]'>
+            <p className='mt-6 text-center text-lg text-white/[.89]'>
               Technology isn't a monolithic industry.
               <br />
               Rather, its components are diverse and complex.
@@ -102,6 +101,7 @@ export default function App() {
             direction='right'
             gradientFrom='#05cafe'
             gradientTo='#2f32cf'
+            customMargin='mt-10'
           ></ComponentOfTechnology>
           <ComponentOfTechnology
             name='Game Dev'
@@ -132,13 +132,14 @@ export default function App() {
             direction='left'
             gradientFrom='#555'
             gradientTo='#555'
+            customMargin='mb-0'
           ></ComponentOfTechnology>
         </div>
       </div>
       <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
         <div>
           <Fade bottom>
-            <h1 className='mt-20 mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className=' mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Our Projects
             </h1>
           </Fade>
