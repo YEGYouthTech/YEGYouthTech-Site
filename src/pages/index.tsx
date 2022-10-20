@@ -1,8 +1,8 @@
 import React from 'react';
-import { BsArrowRightCircle } from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
+import Button from '../components/Button';
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
 import ExecMember from '../components/ExecMember';
@@ -322,19 +322,66 @@ export default function App() {
 
       <SectionBreak />
 
-      <div className='font-workSans mx-auto max-w-4xl px-4 mb-12' id='join-us'>
+      <div className='font-workSans mx-auto mb-12 max-w-4xl px-4' id='join-us'>
         <div>
           <Fade up>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Join Us!
             </h1>
           </Fade>
-          <div className='flex flex-col gap-12 text-center md:flex-row'>
+          
+          <div className='flex flex-col items-center justify-center gap-12 text-center'>
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
                   <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
-                    Join our Discord
+                    Apply To Be A Team Member
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We are always looking for new team members.
+                    <br />
+                    If you are interested in joining our team,
+                    <br />
+                    please fill out this form.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <Button
+                    link='https://forms.gle/VEZaiWd1qpXvsRWt6'
+                    target='_blank'
+                    text='Apply'
+                  />
+                </div>
+              </div>
+            </Zoom>
+
+            <Zoom>
+              <div className='flex w-full flex-col md:w-1/2'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                    Subscribe To Our Newsletter
+                  </h1>
+                  <p className='text-lg text-gray-200/60'>
+                    We send out emails about our
+                    <br />
+                    events, workshops, and opportunities.
+                  </p>
+                </div>
+                <div className='mt-8'>
+                  <Button
+                    link='https://forms.gle/zwErYCuSkw2PFQTXA'
+                    target='_blank'
+                    text='Subscribe'
+                  />
+                </div>
+              </div>
+            </Zoom>
+
+            <Zoom>
+              <div className='flex w-full flex-col md:w-1/2'>
+                <div className='grow-1 flex flex-col gap-4'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                    Join Our Discord
                   </h1>
                   <p className='text-lg text-gray-200/60'>
                     We have a Discord server where we discuss tech, share
@@ -342,67 +389,14 @@ export default function App() {
                   </p>
                 </div>
                 <div className='mt-8'>
-                  <a
-                    href='https://discord.gg/szjzhYkT9e'
+                  <Button
+                    link='https://discord.gg/szjzhYkT9e'
                     target='_blank'
-                    rel='noreferrer'
-                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                  >
-                    Join
-                  </a>
+                    text='Join'
+                  />
                 </div>
               </div>
             </Zoom>
-            <Zoom>
-              <div className='flex w-full flex-col md:w-1/2'>
-                <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
-                    Subscribe to our newsletter
-                  </h1>
-                  <p className='text-lg text-gray-200/60'>
-                    We send out emails about our events, workshops, and
-                    opportunities.
-                  </p>
-                </div>
-                <div className='mt-8'>
-                  <a
-                    href='https://forms.gle/zwErYCuSkw2PFQTXA'
-                    className='rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    Subscribe
-                  </a>
-                </div>
-              </div>
-            </Zoom>
-
-            <div className='flex flex-col items-center justify-center'>
-              <Fade left duration={200} delay={200}>
-                <h1 className='text-3xl font-bold text-sky-200/[.87]'>
-                  Apply to be a team member
-                </h1>
-              </Fade>
-              <Fade left duration={200} delay={400}>
-                <p className='my-7 text-lg text-gray-200/60 md:text-center'>
-                  We are always looking for new team members.
-                  <br />
-                  If you are interested in joining our team, please fill out
-                  this form.
-                </p>
-              </Fade>
-
-              <Fade left duration={200} delay={600}>
-                <a
-                  href='https://forms.gle/VEZaiWd1qpXvsRWt6'
-                  className='m-auto inline-flex items-center gap-2 rounded-[55px] bg-gradient-to-r from-sky-800/20 to-sky-900/20 px-8 py-3 font-bold text-sky-200/[.87] duration-300 hover:from-sky-800/40 hover:to-sky-900/40'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  Apply to join the team <BsArrowRightCircle size={24} />
-                </a>
-              </Fade>
-            </div>
           </div>
         </div>
       </div>
@@ -428,7 +422,7 @@ export default function App() {
               />
             </a>
           </div>
-          <hr className='my-8 w-24 m-auto border-gray-200/60' />
+          <hr className='m-auto my-8 w-24 border-gray-200/60' />
           <p className='text-center text-white/60'>
             &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
             All rights reserved.

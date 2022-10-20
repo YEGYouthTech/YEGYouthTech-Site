@@ -7,8 +7,9 @@ export default function ExecMember({ name, title, image, id }) {
       <div className='mb-6 w-1/5 px-1'>
         <div className='flex flex-col'>
           <img
-            className='rounded-2xl drop-shadow-md transition-all delay-100 duration-200 hover:drop-shadow-xl'
+            className='rounded-md border-2 border-neutral-800 drop-shadow-md transition-all delay-100 duration-200 hover:drop-shadow-xl'
             src={image}
+            alt='Executive team images'
           />
           <div className='mt-4 text-center'>
             <h1 className='mb-1 text-xs font-bold text-gray-100'>{name}</h1>
