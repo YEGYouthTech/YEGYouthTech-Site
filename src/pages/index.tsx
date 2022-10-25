@@ -7,6 +7,7 @@ import Button from '../components/Button';
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
 import ExecMember from '../components/ExecMember';
+import Footer from '../components/Footer';
 import { HeroTitle } from '../components/HeroTitle';
 import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
@@ -88,10 +89,10 @@ export default function App() {
         <HeroTitle />
       </div>
 
-      <div className='mx-auto mt-6 max-w-5xl px-4' id='cot'>
+      <div className='mx-auto max-w-5xl px-4' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='mt-12 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='mt-[4.5rem] bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Components of Technology
             </h1>
           </Fade>
@@ -229,7 +230,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade bottom>
-            <p className='my-4 text-center text-lg text-white/[.89]'>
+            <p className='mb-8 text-center text-lg text-white/[.89]'>
               Our mission is to foster an appreciation for the ways technology
               has changed our lives, inspiring and empowering the next
               generation of technologists in our community.
@@ -304,7 +305,7 @@ export default function App() {
             <InfoCard
               title='Did You Know?'
               body={
-                <div>
+                <div className='opacity-[.87]'>
                   According to{' '}
                   <a
                     href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
@@ -320,6 +321,7 @@ export default function App() {
                   employment growth rate of all occupations nationwide.
                 </div>
               }
+              margin='mt-6'
             />
           </Zoom>
         </div>
@@ -327,14 +329,14 @@ export default function App() {
 
       <SectionBreak />
 
-      <div className='font-workSans mx-auto mb-12 max-w-4xl px-4' id='join-us'>
+      <div className='font-workSans mx-auto mb-[4.5rem] max-w-4xl px-4' id='join-us'>
         <div>
           <Fade up>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Join Us!
             </h1>
           </Fade>
-          
+
           <div className='flex flex-col items-center justify-center gap-12 text-center'>
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
@@ -405,35 +407,22 @@ export default function App() {
           </div>
         </div>
       </div>
-
-      <div className='bg-black/[.94]'>
-        <div className='mx-auto max-w-6xl py-8 px-4'>
-          <p className='text-center text-lg text-white/[.87]'>
-            Thank you to our sponsors for supporting our mission!
-          </p>
-          <div className='mt-6 flex items-center justify-center gap-4 opacity-[.87]'>
-            <a href='https://www.cybera.ca/' target='_blank' rel='noreferrer'>
-              <img
-                className='w-32'
-                src='https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png'
-                alt='Cybera'
-              />
-            </a>
-            <a href='https://mlh.io/' target='_blank' rel='noreferrer'>
-              <img
-                className='w-32'
-                src='https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png'
-                alt='MLH'
-              />
-            </a>
-          </div>
-          <hr className='m-auto my-8 w-24 border-gray-200/60' />
-          <p className='text-center text-white/60'>
-            &copy; 2022 Edmonton Youth Technology Organization (YEGYouth.Tech).
-            All rights reserved.
-          </p>
-        </div>
-      </div>
+      
+      <Footer
+        message='Thank you to our sponsors for supporting our mission!'
+        imgData={[
+          {
+            link: 'https://www.cybera.ca/',
+            altText: 'Cybera',
+            src: 'https://i0.wp.com/www.cybera.ca/wp-content/uploads/2020/03/cybera_logo_2.png',
+          },
+          {
+            link: 'https://mlh.io/',
+            altText: 'MLH',
+            src: 'https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.png',
+          },
+        ]}
+      />
     </AnimationStateContext.Provider>
   );
 }
