@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
@@ -58,6 +59,10 @@ export default function App() {
     <AnimationStateContext.Provider
       value={{ animationState, setAnimationState }}
     >
+      <Head>
+        <title>YEGYouth.Tech</title>
+      </Head>
+
       <Navbar />
 
       <div className='relative h-screen w-screen overflow-hidden'>
