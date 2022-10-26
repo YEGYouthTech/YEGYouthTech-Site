@@ -30,19 +30,15 @@ export default function Project(props) {
         className='notFadeInRight flex w-full flex-col items-center justify-center md:w-1/2'
       >
         <div className='flex w-full flex-col items-center justify-center'>
-          <div className='relative flex max-h-[12rem] w-full justify-center p-8'>
-            <img
-              src={logo}
-              alt={`${name} logo`}
-              className='h-auto h-fit max-h-full w-fit max-w-full'
-            />
+          <div className='pb-6'>
+            <img src={logo} alt={`${name} logo`} className='w-[18rem]' />
           </div>
           <h2
-            className={`bg-gradient-to-r text-center text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
+            className={`font-montserrat bg-gradient-to-r text-center text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
           >
             {name}
           </h2>
-          <p className='mt-4 text-center leading-7 text-white/[.89]'>
+          <p className='mt-6 text-center leading-7 text-white/[.89]'>
             {description}
           </p>
           {disclaimer && (
@@ -75,7 +71,7 @@ export default function Project(props) {
             </a>
           </div>
         </div>
-        <div className='mt-4 flex w-full flex-row items-center justify-center gap-1'>
+        <div className='mt-6 flex w-full flex-row items-center justify-center gap-1'>
           {contributors.map((contributor, index) => (
             <a
               href={contributor.link}
@@ -110,11 +106,7 @@ export default function Project(props) {
       {(image && !imageSmall && (
         <div className='flex w-full flex-col items-center justify-center md:w-1/2'>
           <Fade right>
-            <img
-              src={image}
-              alt='Project screenshot'
-              className='w-full animate-textFloat'
-            />
+            <img src={image} alt='Project screenshot' className='w-full' />
           </Fade>
         </div>
       )) ||
@@ -125,14 +117,14 @@ export default function Project(props) {
                 <img
                   src={image}
                   alt='Project screenshot'
-                  className='w-3/4 -rotate-[8deg]'
+                  className='w-3/4 -translate-y-[5%] -rotate-[8deg]'
                 />
               </div>
               <div className='h-full w-full animate-textFloat'>
                 <img
                   src={imageSmall}
                   alt='Project screenshot'
-                  className='absolute bottom-0 right-0 w-1/3 -translate-y-1/4 rotate-[8deg]'
+                  className='absolute bottom-0 right-0 w-1/3 -translate-y-[5%] rotate-[8deg]'
                 />
               </div>
             </div>

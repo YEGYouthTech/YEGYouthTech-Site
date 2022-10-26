@@ -149,7 +149,7 @@ export default function App() {
       <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
         <div>
           <Fade bottom>
-            <h1 className=' mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Our Projects
             </h1>
           </Fade>
@@ -329,7 +329,10 @@ export default function App() {
 
       <SectionBreak />
 
-      <div className='font-workSans mx-auto mb-[4.5rem] max-w-4xl px-4' id='join-us'>
+      <div
+        className='font-workSans mx-auto mb-[4.5rem] max-w-4xl px-4'
+        id='join-us'
+      >
         <div>
           <Fade up>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -341,7 +344,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text font-montserrat text-2xl text-transparent opacity-[.87]'>
                     Apply To Be A Team Member
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -352,7 +355,7 @@ export default function App() {
                     please fill out this form.
                   </p>
                 </div>
-                <div className='mt-8'>
+                <div className='mt-6'>
                   <Button
                     link='https://forms.gle/VEZaiWd1qpXvsRWt6'
                     target='_blank'
@@ -365,7 +368,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text font-montserrat text-2xl text-transparent opacity-[.87]'>
                     Subscribe To Our Newsletter
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -374,7 +377,7 @@ export default function App() {
                     events, workshops, and opportunities.
                   </p>
                 </div>
-                <div className='mt-8'>
+                <div className='mt-6'>
                   <Button
                     link='https://forms.gle/zwErYCuSkw2PFQTXA'
                     target='_blank'
@@ -387,7 +390,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='font-montserrat bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
                     Join Our Discord
                   </h1>
                   <p className='text-lg text-gray-200/60'>
@@ -395,7 +398,7 @@ export default function App() {
                     resources, and collaborate on projects.
                   </p>
                 </div>
-                <div className='mt-8'>
+                <div className='mt-6'>
                   <Button
                     link='https://discord.gg/szjzhYkT9e'
                     target='_blank'
@@ -407,7 +410,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      
+
       <Footer
         message='Thank you to our sponsors for supporting our mission!'
         imgData={[
