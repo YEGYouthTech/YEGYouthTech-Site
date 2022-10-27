@@ -390,7 +390,7 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='font-montserrat bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text font-montserrat text-2xl text-transparent opacity-[.87]'>
                     Join Our Discord
                   </h1>
                   <p className='text-lg text-gray-200/60'>
