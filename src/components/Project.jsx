@@ -44,7 +44,7 @@ export default function Project(props) {
             {description}
           </p>
           {disclaimer && (
-            <p className='mt-4 text-center text-sm leading-7 text-gray-200/60'>
+            <p className='mt-4 text-center leading-7 text-gray-200/60'>
               {disclaimer}
             </p>
           )}

@@ -236,70 +236,78 @@ export default function App() {
               generation of technologists in our community.
             </p>
           </Fade>
-          <div className='flex flex-wrap justify-center'>
-            <ExecMember
-              name='Oliver Chen'
-              title='President'
-              image='/images/team/exec/Oliver_Chen.jpg'
-              id={1}
-            />
-            <ExecMember
-              name='Alex Han'
-              title='VP Operations'
-              image='/images/team/exec/Alex_Han.jpg'
-              id={2}
-            />
-            <ExecMember
-              name='David Liu'
-              title='VP Public Relations'
-              image='/images/team/exec/David_Liu.jpg'
-              id={3}
-            />
-            <ExecMember
-              name='Nathan Zhao'
-              title='VP Technology'
-              image='/images/team/exec/Nathan_Zhao.jpg'
-              id={4}
-            />
-            <ExecMember
-              name='Julianna H'
-              title='VP Human Resources'
-              image='/images/team/exec/Julianna_Huang.jpg'
-              id={5}
-            />
-          </div>
-          <div className='flex flex-wrap justify-center'>
-            <ExecMember
-              name='Joshua Terry'
-              title='Director of Media'
-              image='/images/team/exec/Joshua_Terry.jpg'
-              id={1}
-            />
-            <ExecMember
-              name='Hao Cheng'
-              title='Director of Web Dev'
-              image='/images/team/exec/Hao_Cheng.jpg'
-              id={2}
-            />
-            <ExecMember
-              name='Evan Yin'
-              title='Director of Art & Graphics'
-              image='/images/team/exec/Evan_Yin.jpg'
-              id={3}
-            />
-            <ExecMember
-              name='Frank Li'
-              title='Director of Competition Dev'
-              image='/images/team/exec/Frank_Li.jpg'
-              id={4}
-            />
-            <ExecMember
-              name='TBD'
-              title=''
-              image='/images/team/exec/silhouette.png'
-              id={5}
-            />
-          </div>
+          <ExecMember
+            name='Oliver Chen'
+            title='President'
+            image='/images/team/exec/Oliver_Chen.jpg'
+            quote='Oliver loves applying his computer science skills to bring value to others. With a passion for technology, he wants to see others enjoy the benefits of its application as much as he does. He has already been involved in many initiatives including Course Companion and a COVID-19 Statistics bot. Oliver is also excited to share his experiences from participating in computing contests, hackathons, and cybersecurity contests.'
+            orientation='right'
+            id={1}
+          />
+          <ExecMember
+            name='Alex Han'
+            title='VP Operations'
+            image='/images/team/exec/Alex_Han.jpg'
+            quote={`As someone who's interested in making an impact in his community, Alex hopes to inspire students in discovering their passion and interest for computer science. He hopes to spread this message across the city, while nurturing young talents with the appropriate resources to realize and find success in a future career opportunity. Alex intends to achieve this by streamlining internal affairs to have the most efficient output possible.`}
+            orientation='left'
+            id={2}
+          />
+          <ExecMember
+            name='David Liu'
+            title='VP Public Relations'
+            image='/images/team/exec/David_Liu.jpg'
+            quote='An experienced competitor and a passionate person about technology. David aims to inspire others to explore the different aspects of technology that it has to offer. Through participating in clubs and contests like Cyber Patriots and the Canadian Computing Competition (CCC), David gained a better understanding about different aspects of technology. He is eager to use this opportunity to share resources to help others develop a better understanding of technology.'
+            orientation='right'
+            id={3}
+          />
+          <ExecMember
+            name='Nathan Zhao'
+            title='VP Technology'
+            image='/images/team/exec/Nathan_Zhao.jpg'
+            quote='Nathan is a high school student at Archbishop Macdonald, who is dedicated to inspiring new people about STEM. Nathan hopes to make a big contribution to the organization so it in turn can contribute to the youth community. He works as the STEM Club Lead Executive at Mac and participates in many other activities. He hopes he can use his position to give more opportunities and share his appreciation and love for STEM.'
+            orientation='left'
+            id={4}
+          />
+          <ExecMember
+            name='Julianna H'
+            title='VP Human Resources'
+            image='/images/team/exec/Julianna_Huang.jpg'
+            quote={`Dedicated to making a positive change, Julianna hopes to contribute by using her communication skills to this cause. Her work as the Vice President of Operations at Old Scona's Students' Union as well as an executive of multiple clubs (Geopolitics, Chinese Cultural Club, and Key Club) has allowed her to become an amazing manager. She hopes to use the skills that she has developed to help manage internal and external resources.`}
+            orientation='right'
+            id={5}
+          />
+          <ExecMember
+            name='Joshua Terry'
+            title='Director of Media'
+            image='/images/team/exec/Joshua_Terry.jpg'
+            quote='As an avid photographer, videographer, and graphic designer, Josh hopes to contribute by using his skills to inform and encourage others to get involved in YEGYouth.Tech. Participating in CyberPatriots and having a passion for programming, Josh hopes that he can use this platform to share his love for technology with others.'
+            orientation='left'
+            id={1}
+          />
+          <ExecMember
+            name='Hao Cheng'
+            title='Director of Web Dev'
+            image='/images/team/exec/Hao_Cheng.jpg'
+            quote='Interested in technology and making technology more accessible and enjoyable to students, Hao hopes to encourage and help students interested in the field to take the next step forward in their tech journeys. He hopes to use his skills in web and game development to help create more opportunities and events for others.'
+            orientation='right'
+            id={2}
+          />
+          <ExecMember
+            name='Evan Yin'
+            title='Director of Art & Graphics'
+            image='/images/team/exec/Evan_Yin.jpg'
+            quote='An amazing artist and an even better thinker. Evan is the lead graphic designer for YEGYouth.Tech dedicated to creating rich and dynamic visuals. With his artistic talents and experience, Evan hopes to help attract more individuals to this organization by creating visuals for social media, events, and more.'
+            orientation='left'
+            id={3}
+          />
+          <ExecMember
+            name='Frank Li'
+            title='Director of Competition Dev'
+            image='/images/team/exec/Frank_Li.jpg'
+            quote='Wanting to bring the joy of problem solving to every student, Frank wishes to provide the motivation and opportunities for everyone to start out in tech competitions. With years of experience in many different contests, varying from programming (CCC, USACO) to cybersecurity (CyberPatriot, PicoCTF) and time as an OSA Computer Society executive, Frank wishes to share his experience with all.'
+            orientation='right'
+            id={4}
+          />
 
           <Zoom>
             <InfoCard
