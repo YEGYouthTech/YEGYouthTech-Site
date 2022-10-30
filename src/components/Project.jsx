@@ -40,11 +40,11 @@ export default function Project(props) {
           >
             {name}
           </h2>
-          <p className='mt-6 text-center leading-7 text-white/[.89]'>
+          <p className='mt-6 text-center text-lg leading-7 text-gray-100'>
             {description}
           </p>
           {disclaimer && (
-            <p className='mt-4 text-center leading-7 text-gray-200/60'>
+            <p className='mt-4 text-center leading-7 text-gray-100/60'>
               {disclaimer}
             </p>
           )}
@@ -55,7 +55,7 @@ export default function Project(props) {
               text={
                 <div className='flex flex-row items-center gap-1'>
                   <AiFillGithub size={24} />
-                  <span>Live Demo</span>
+                  <span>Demo</span>
                 </div>
               }
             />
