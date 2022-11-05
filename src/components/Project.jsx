@@ -2,6 +2,8 @@ import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 import { InView } from 'react-intersection-observer';
 import Fade from 'react-reveal/Fade';
 
+import Button from './Button';
+
 export default function Project(props) {
   const {
     name,
@@ -34,44 +36,42 @@ export default function Project(props) {
             <img src={logo} alt={`${name} logo`} className='w-[18rem]' />
           </div>
           <h2
-            className={`font-montserrat bg-gradient-to-r text-center text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
+            className={`bg-gradient-to-r text-center font-montserrat text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
           >
             {name}
           </h2>
-          <p className='mt-6 text-center leading-7 text-white/[.89]'>
+          <p className='mt-6 text-center text-lg leading-7 text-gray-100'>
             {description}
           </p>
           {disclaimer && (
-            <p className='mt-4 text-center text-sm leading-7 text-gray-200/60'>
+            <p className='mt-4 text-center leading-7 text-gray-100/60'>
               {disclaimer}
             </p>
           )}
-          <div className='mt-4 flex w-full flex-row items-center justify-center gap-4'>
-            <a
-              href={link}
+          <div className='mt-6 flex w-full flex-row items-center justify-center gap-4'>
+            <Button
+              link={link}
               target='_blank'
-              rel='noopener noreferrer'
-              className='flex flex-row items-center gap-1 text-center text-blue-400'
-            >
-              <AiOutlineLink size={24} />
-              <span className='animate-underline text-xl'>
-                Live Demo<span className='text-underline'></span>
-              </span>
-            </a>
-            <a
-              href={github}
+              text={
+                <div className='flex flex-row items-center gap-1'>
+                  <AiFillGithub size={24} />
+                  <span>Demo</span>
+                </div>
+              }
+            />
+            <Button
+              link={github}
               target='_blank'
-              rel='noopener noreferrer'
-              className='flex flex-row items-center gap-1 text-center text-blue-400'
-            >
-              <AiFillGithub size={24} />
-              <span className='animate-underline text-xl'>
-                GitHub<span className='text-underline'></span>
-              </span>
-            </a>
+              text={
+                <div className='flex flex-row items-center gap-1'>
+                  <AiOutlineLink size={24} />
+                  <span>Github</span>
+                </div>
+              }
+            />
           </div>
         </div>
-        <div className='mt-6 flex w-full flex-row items-center justify-center gap-1'>
+        <div className='mt-8 flex w-full flex-row items-center justify-center gap-1'>
           {contributors.map((contributor, index) => (
             <a
               href={contributor.link}
@@ -117,14 +117,14 @@ export default function Project(props) {
                 <img
                   src={image}
                   alt='Project screenshot'
-                  className='w-3/4 -translate-y-[5%] -rotate-[8deg]'
+                  className='w-3/4 -translate-y-[-5%] -rotate-[8deg]'
                 />
               </div>
               <div className='h-full w-full animate-textFloat'>
                 <img
                   src={imageSmall}
                   alt='Project screenshot'
-                  className='absolute bottom-0 right-0 w-1/3 -translate-y-[5%] rotate-[8deg]'
+                  className='absolute bottom-0 right-0 w-1/3 -translate-y-[2%] rotate-[8deg]'
                 />
               </div>
             </div>

@@ -97,7 +97,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade delay={300} bottom>
-            <p className='mt-6 mb-10 text-center text-lg text-white/[.89]'>
+            <p className='mt-6 mb-10 text-center text-lg text-gray-100'>
               Technology isn't a monolithic industry.
               <br />
               Rather, its components are diverse and complex.
@@ -156,7 +156,7 @@ export default function App() {
           <div className='flex gap-6'>
             <Project
               name='Course Companion'
-              description='A non-district tool to help students compare their timetables, filling in the gaps in official programs (SchoolZone).'
+              description='A non-district tool to help students compare timetables, filling in the gaps in official programs (SchoolZone).'
               disclaimer='Only available for students of Old Scona Academic.'
               logo='/images/projects/coco/logo.png'
               link='https://coco.yegyouth.tech/'
@@ -222,7 +222,10 @@ export default function App() {
 
       <SectionBreak />
 
-      <div className='font-workSans mx-auto max-w-3xl px-2' id='about'>
+      <div
+        className='font-workSans mx-auto max-w-3xl px-2 text-white'
+        id='about'
+      >
         <div>
           <Fade bottom>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -230,7 +233,7 @@ export default function App() {
             </h1>
           </Fade>
           <Fade bottom>
-            <p className='mb-8 text-center text-lg text-white/[.89]'>
+            <p className='mb-8 text-center text-lg text-gray-100'>
               Our mission is to foster an appreciation for the ways technology
               has changed our lives, inspiring and empowering the next
               generation of technologists in our community.
@@ -294,18 +297,25 @@ export default function App() {
               id={4}
             />
             <ExecMember
+              name='Heril Saha'
+              title='Full Stack Developer'
+              image='/images/team/exec/Heril_Saha.jpg'
+              id={4}
+            />
+          </div>
+          <div className='mt-4 flex flex-wrap justify-center'>
+            <ExecMember
               name='TBD'
               title=''
               image='/images/team/exec/silhouette.png'
               id={5}
             />
           </div>
-
           <Zoom>
             <InfoCard
               title='Did You Know?'
               body={
-                <div className='opacity-[.87]'>
+                <div className='text-lg'>
                   According to{' '}
                   <a
                     href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
@@ -344,10 +354,10 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text font-montserrat text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='font-montserrat text-2xl text-gray-100'>
                     Apply To Be A Team Member
                   </h1>
-                  <p className='text-lg text-gray-200/60'>
+                  <p className='text-lg text-gray-100/60'>
                     We are always looking for new team members.
                     <br />
                     If you are interested in joining our team,
@@ -368,10 +378,10 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text font-montserrat text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='font-montserrat text-2xl text-gray-100'>
                     Subscribe To Our Newsletter
                   </h1>
-                  <p className='text-lg text-gray-200/60'>
+                  <p className='text-lg text-gray-100/60'>
                     We send out emails about our
                     <br />
                     events, workshops, and opportunities.
@@ -390,10 +400,10 @@ export default function App() {
             <Zoom>
               <div className='flex w-full flex-col md:w-1/2'>
                 <div className='grow-1 flex flex-col gap-4'>
-                  <h1 className='font-montserrat bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-2xl text-transparent opacity-[.87]'>
+                  <h1 className='font-montserrat text-2xl text-gray-100'>
                     Join Our Discord
                   </h1>
-                  <p className='text-lg text-gray-200/60'>
+                  <p className='text-lg text-gray-100/60'>
                     We have a Discord server where we discuss tech, share
                     resources, and collaborate on projects.
                   </p>

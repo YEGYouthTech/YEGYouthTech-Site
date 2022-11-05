@@ -12,7 +12,9 @@ export default function ExecMember({ name, title, image, id }) {
             alt='Executive team images'
           />
           <div className='mt-4 text-center'>
-            <h1 className='mb-1 text-xs font-bold text-gray-100 font-montserrat'>{name}</h1>
+            <h1 className='mb-1 font-montserrat text-xs font-bold text-gray-100'>
+              {name}
+            </h1>
             {title && (
               <div className='mb-2 text-xs font-light text-gray-300'>
                 {title}

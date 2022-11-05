@@ -45,9 +45,9 @@ export default function Navbar() {
           className='group flex h-6 w-9 cursor-pointer flex-col items-center justify-between'
           onClick={handleClick}
         >
-          <span className='ml-auto h-[3px] w-full rounded-md bg-gray-100/75 transition-colors duration-200 ease-in-out group-hover:bg-gray-100' />
-          <span className='ml-auto h-[3px] w-3/4 rounded-md bg-gray-100/75 transition-colors duration-200 ease-in-out group-hover:bg-gray-100' />
-          <span className='ml-auto h-[3px] w-2/4 rounded-md bg-gray-100/75 transition-colors duration-200 ease-in-out group-hover:bg-gray-100' />
+          <span className='ml-auto h-[3px] w-full rounded-md bg-gray-100/60 transition-colors duration-500 ease-in-out group-hover:bg-gray-100' />
+          <span className='ml-auto h-[3px] w-3/4 rounded-md bg-gray-100/60 transition-colors duration-500 ease-in-out group-hover:bg-gray-100' />
+          <span className='ml-auto h-[3px] w-2/4 rounded-md bg-gray-100/60 transition-colors duration-500 ease-in-out group-hover:bg-gray-100' />
         </div>
       </div>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
                 >
                   <a
                     href={data[1]}
-                    className='text-[1.125rem] text-gray-100/75 transition-colors duration-200 ease-in-out hover:text-gray-100'
+                    className='text-[1.125rem] text-gray-100/60 transition-colors duration-500 ease-in-out hover:text-gray-100'
                     onClick={handleClick}
                   >
                     {data[0]}
