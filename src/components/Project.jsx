@@ -11,8 +11,8 @@ export default function Project(props) {
     disclaimer,
     logo,
     link,
-    gradientFrom,
-    gradientTo,
+    // gradientFrom,
+    // gradientTo,
     image,
     imageSmall,
     github,
@@ -32,11 +32,12 @@ export default function Project(props) {
         className='notFadeInRight flex w-full flex-col items-center justify-center md:w-1/2'
       >
         <div className='flex w-full flex-col items-center justify-center'>
-          <div className='pb-6'>
+          <div className='pb-7'>
             <img src={logo} alt={`${name} logo`} className='w-[18rem]' />
           </div>
           <h2
-            className={`bg-gradient-to-r text-center font-montserrat text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
+            // className={`bg-gradient-to-r text-center font-montserrat text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}
+            className='text-center font-montserrat text-3xl font-bold text-gray-100'
           >
             {name}
           </h2>

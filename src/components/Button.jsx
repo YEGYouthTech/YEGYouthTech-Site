@@ -6,7 +6,7 @@ export default function Button(props) {
   return (
     <a
       href={link}
-      className='group relative inline-block inline-flex items-center justify-start overflow-hidden rounded-md px-6 py-3 font-bold'
+      className='group relative inline-block inline-flex min-w-[6rem] items-center justify-start overflow-hidden rounded-md px-6 py-3 font-bold'
       target={target}
       rel={target == '_blank' && 'noreferrer'}
     >
