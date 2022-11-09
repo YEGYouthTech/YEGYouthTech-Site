@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
+import React from 'react';
+// import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 import Zoom from 'react-reveal/Zoom';
 
 export default function ExecMember({
@@ -11,12 +11,6 @@ export default function ExecMember({
   breakLine,
   id,
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  function handleExpand() {
-    setIsExpanded((prev) => !prev);
-  }
-
   return (
     <Zoom delay={id * 100}>
       <div className='w-full px-1'>
@@ -44,24 +38,7 @@ export default function ExecMember({
                   {name}
                 </h2>
                 <span className='text-lg text-gray-100'>{title}</span>
-                {isExpanded ? (
-                  <div>
-                    <BsFillCaretUpFill
-                      size={24}
-                      onClick={handleExpand}
-                      className='text-gray-100 cursor-pointer'
-                    />
-                    <p className='text-right text-lg text-gray-100/60'>
-                      {quote}
-                    </p>
-                  </div>
-                ) : (
-                  <BsFillCaretDownFill
-                    size={24}
-                    onClick={handleExpand}
-                    className='text-gray-100 cursor-pointer'
-                  />
-                )}
+                <p className='text-right text-lg text-gray-100/60'>{quote}</p>
               </div>
               <img
                 className='w-[12rem] rounded-md'

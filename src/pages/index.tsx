@@ -317,6 +317,15 @@ export default function App() {
             breakLine={false}
             id={9}
           />
+          <ExecMember
+            name='Heril Saha'
+            title='President'
+            image='/images/team/exec/Oliver_Chen.jpg'
+            quote='Oliver loves applying his computer science skills to bring value to others. With a passion for technology, he wants to see others enjoy the benefits of its application as much as he does. He has already been involved in many initiatives including Course Companion and a COVID-19 Statistics bot. Oliver is also excited to share his experiences from participating in computing contests, hackathons, and cybersecurity contests.'
+            orientation='left'
+            breakLine={true}
+            id={10}
+          />
 
           <Zoom>
             <InfoCard
