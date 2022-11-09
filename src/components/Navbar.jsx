@@ -7,13 +7,7 @@ export default function Navbar() {
   const { animationState } = useAnimationState();
 
   // const pageLinks = [{ "Home": "#" }, { "CoT": "#cot" }, { "Projects": "#projects" }, { "About": "#about" }, { "Opportunities": "#opportunities" }, { "Puzzle Week": "#puzzle-week" }];
-  const pageLinks = [
-    { Home: '#' },
-    { CoT: '#cot' },
-    { Projects: '#projects' },
-    { About: '#about' },
-    { 'Join Us': '#join-us' },
-  ];
+  const pageLinks = [{ Home: '/#' }, { CoT: '/cot' }, { About: '/about' }];
 
   function handleClick() {
     setIsClicked((prev) => !prev);
