@@ -6,10 +6,8 @@ import Zoom from 'react-reveal/Zoom';
 import Button from '../components/Button';
 import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
-import ExecMember from '../components/ExecMember';
 import Footer from '../components/Footer';
 import { HeroTitle } from '../components/HeroTitle';
-import InfoCard from '../components/InfoCard';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import SectionBreak from '../components/SectionBreak';
@@ -89,62 +87,7 @@ export default function App() {
         <HeroTitle />
       </div>
 
-      <div className='mx-auto max-w-5xl px-4' id='cot'>
-        <div className='overflow-hidden'>
-          <Fade delay={100} bottom>
-            <h1 className='mt-[4.5rem] bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
-              Components of Technology
-            </h1>
-          </Fade>
-          <Fade delay={300} bottom>
-            <p className='mt-6 mb-10 text-center text-lg text-gray-100'>
-              Technology isn't a monolithic industry.
-              <br />
-              Rather, its components are diverse and complex.
-            </p>
-          </Fade>
-          <ComponentOfTechnology
-            name='Cybersecurity'
-            direction='right'
-            gradientFrom='#05cafe'
-            gradientTo='#2f32cf'
-            customMargin='mt-0'
-          ></ComponentOfTechnology>
-          <ComponentOfTechnology
-            name='Game Dev'
-            direction='left'
-            gradientFrom='#f50d5b'
-            gradientTo='#e400ff'
-          ></ComponentOfTechnology>
-          <ComponentOfTechnology
-            name='Networking'
-            direction='right'
-            gradientFrom='#FF512F'
-            gradientTo='#DD2476'
-          ></ComponentOfTechnology>
-          <ComponentOfTechnology
-            name='Web & App Dev'
-            direction='left'
-            gradientFrom='#ee0979'
-            gradientTo='#ff6a00'
-          ></ComponentOfTechnology>
-          <ComponentOfTechnology
-            name='Algorithms'
-            direction='right'
-            gradientFrom='#e4f12e'
-            gradientTo='#56db63'
-          ></ComponentOfTechnology>
-          <ComponentOfTechnology
-            name='Machine Learning'
-            direction='left'
-            gradientFrom='#e5e7eb99'
-            gradientTo='#555'
-            customMargin='mb-0'
-          ></ComponentOfTechnology>
-        </div>
-      </div>
-
-      <SectionBreak customMargin='mt-[7.5rem] mb-28' />
+      {/* Create a "Our Mission / Goal" section here */}
 
       <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
         <div>
