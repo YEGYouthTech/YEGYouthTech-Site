@@ -64,7 +64,10 @@ export default function App() {
       <StarBG />
       {/* </div> */}
 
-      <div className='font-workSans mx-auto max-w-3xl px-2' id='about'>
+      <div
+        className='font-workSans mx-auto my-[9.5rem] max-w-3xl px-4'
+        id='about'
+      >
         <div>
           <Fade bottom>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>

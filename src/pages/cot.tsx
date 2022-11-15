@@ -60,10 +60,10 @@ export default function App() {
 
       <StarBG />
 
-      <div className='mx-auto max-w-5xl px-4' id='cot'>
+      <div className='mx-auto my-[9.5rem] max-w-5xl px-4' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='mt-[4.5rem] bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
               Components of Technology
             </h1>
           </Fade>

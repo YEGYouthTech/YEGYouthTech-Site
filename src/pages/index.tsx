@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 import Button from '../components/Button';
-import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
 import Footer from '../components/Footer';
 import { HeroTitle } from '../components/HeroTitle';
@@ -89,7 +88,10 @@ export default function App() {
 
       {/* Create a "Our Mission / Goal" section here */}
 
-      <div className='font-workSans mx-auto max-w-5xl px-4' id='projects'>
+      <div
+        className='font-workSans mx-auto mt-[4.5rem] max-w-5xl px-4'
+        id='projects'
+      >
         <div>
           <Fade bottom>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
