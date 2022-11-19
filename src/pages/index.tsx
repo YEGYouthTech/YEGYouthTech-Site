@@ -166,6 +166,74 @@ export default function App() {
       </div>
 
       <SectionBreak />
+      <div
+        className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row'
+        id='join-us'
+      >
+        <div>
+          <img
+            src='/images/landing/aboutUs.jpg'
+            alt='Edmonton'
+            className='h-[20rem] w-[140rem] rounded-xl object-cover md:h-[30rem]'
+          />
+        </div>
+        <div>
+          <Fade up>
+            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-left font-montserrat text-4xl font-bold text-transparent'>
+              Who We Are
+            </h1>
+          </Fade>
+
+          <div className='flex flex-col items-start justify-center gap-12 text-left'>
+            <Fade up>
+              <p className='text-lg text-gray-100/60'>
+                We are an organization focused on spreading technological
+                awareness to youth in Edmonton. Our mission is to foster an
+                appreciation for the ways technology has changed our lives,
+                inspiring and empowering the next generation of technologists in
+                our community.
+              </p>
+
+              <Button link='/about' text='Learn more' />
+            </Fade>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row-reverse'
+        id='join-us'
+      >
+        <div>
+          <img
+            src='/images/landing/COT.jpg'
+            alt='Edmonton'
+            className='h-[20rem] w-[140rem] rounded-xl object-cover md:h-[30rem]'
+          />
+        </div>
+        <div>
+          <Fade up>
+            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-left font-montserrat text-4xl font-bold text-transparent'>
+              Components of Technology
+            </h1>
+          </Fade>
+
+          <div className='flex flex-col items-start justify-center gap-12 text-left'>
+            <Fade up>
+              <p className='text-lg text-gray-100/60'>
+                Technology isn't a monolithic industry. Rather, its components
+                are diverse and complex. We believe that that the bits and
+                pieces behind the pieces of technology we use everyday inspire
+                developers all around the world to be able to create incredible
+                things.
+              </p>
+
+              <Button link='/cot' text='Learn more' />
+            </Fade>
+          </div>
+        </div>
+      </div>
+      <SectionBreak />
 
       <div
         className='font-workSans mx-auto mb-[4.5rem] max-w-4xl px-4'
