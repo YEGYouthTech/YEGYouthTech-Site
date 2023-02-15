@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
   eslint: {
     dirs: ['src'],

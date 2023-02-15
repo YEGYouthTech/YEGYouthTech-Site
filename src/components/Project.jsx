@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 import { InView } from 'react-intersection-observer';
 import Fade from 'react-reveal/Fade';
@@ -32,8 +33,8 @@ export default function Project(props) {
         className='notFadeInRight flex w-full flex-col items-center justify-center md:w-1/2'
       >
         <div className='flex w-full flex-col items-center justify-center'>
-          <div className='pb-7'>
-            <img src={logo} alt={`${name} logo`} className='w-[18rem]' />
+          <div className='mb-7'>
+            <Image src={logo} alt={`${name} logo`} width={288} height={124} />
           </div>
           <h2
             // className={`bg-gradient-to-r text-center font-montserrat text-3xl font-bold from-${gradientFrom} to-${gradientTo} bg-clip-text text-transparent`}

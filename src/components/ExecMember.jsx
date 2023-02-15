@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 // import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 import Zoom from 'react-reveal/Zoom';
@@ -15,10 +16,12 @@ export default function ExecMember({
     <Zoom delay={id * 100}>
       <div className='w-1/5 px-1'>
         <div className='flex flex-col'>
-          <img
+          <Image
             className='rounded-md border-2 border-neutral-800 drop-shadow-md transition-all delay-100 duration-200'
             src={image}
             alt='Executive team images'
+            width={32}
+            height={32}
           />
           <div className='mt-4 text-center'>
             <h1 className='mb-1 font-montserrat text-xs font-bold text-gray-100'>
@@ -30,7 +33,7 @@ export default function ExecMember({
               </div>
             )}
           </div>
-          
+
           {/* <div className='w-full px-1'>
         <div className='flex flex-col'>
           <img
