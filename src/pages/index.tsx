@@ -4,9 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 import Button from '../components/Button';
-import ComponentOfTechnology from '../components/ComponentOfTechnology';
 import EdmontonLayer from '../components/EdmontonLayer';
-import ExecMember from '../components/ExecMember';
 import Footer from '../components/Footer';
 import { HeroTitle } from '../components/HeroTitle';
 import InfoCard from '../components/InfoCard';
@@ -146,7 +144,7 @@ export default function App() {
       </Zoom>
 
       {/* Create a "Our Mission / Goal" section here */}
-      <div className='mx-auto my-16 max-w-5xl px-4' id='cot'>
+      {/* <div className='mx-auto my-16 max-w-5xl px-4' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
             <h1 className='bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
@@ -199,7 +197,7 @@ export default function App() {
             customMargin='mb-0'
           ></ComponentOfTechnology>
         </div>
-      </div>
+      </div> */}
 
       <div
         className='font-workSans mx-auto mt-[4.5rem] max-w-5xl px-4'
@@ -280,7 +278,7 @@ export default function App() {
 
       <SectionBreak />
 
-      <div
+      {/* <div
         className='font-workSans mx-auto my-[9.5rem] max-w-3xl px-4'
         id='about'
       >
@@ -418,7 +416,7 @@ export default function App() {
             />
           </Zoom>
         </div>
-      </div>
+      </div> */}
 
       <div
         className='font-workSans mx-auto mb-[4.5rem] max-w-4xl px-4'
