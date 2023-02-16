@@ -1,3 +1,4 @@
+import ExportedImage from 'next-image-export-optimizer';
 import React, { useState } from 'react';
 
 import { useAnimationState } from '../context/AnimationStateContext';
@@ -27,10 +28,12 @@ export default function Navbar() {
       <div className='flex flex-row items-center justify-between'>
         <div>
           <a href='#'>
-            <img
+            <ExportedImage
               src='images/others/logo.png'
               alt='Logo'
-              className='w-11 rounded-md'
+              className='rounded-md'
+              width={44}
+              height={44}
             />
           </a>
         </div>
