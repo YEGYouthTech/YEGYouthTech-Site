@@ -2,6 +2,8 @@
 module.exports = {
   images: {
     unoptimized: false,
+    loader: 'akamai',
+    path: '',
   },
   eslint: {
     dirs: ['src'],
