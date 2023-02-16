@@ -225,45 +225,37 @@ export default function App() {
                 {
                   name: 'Oliver Chen',
                   link: 'https://github.com/ochen1/',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Oliver_Chen.jpg',
+                  avatar: 'images/projects/coco/contributors/Oliver_Chen.jpg',
                 },
                 {
                   name: 'Evan Yin',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Evan_Yin.jpg',
+                  avatar: 'images/projects/coco/contributors/Evan_Yin.jpg',
                 },
                 {
                   name: 'Justin Qian',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Justin_Qian.jpg',
+                  avatar: 'images/projects/coco/contributors/Justin_Qian.jpg',
                 },
                 {
                   name: 'Elina Ajamian',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Elina_Ajamian.jpg',
+                  avatar: 'images/projects/coco/contributors/Elina_Ajamian.jpg',
                 },
                 {
                   name: 'Heril Saha',
                   link: 'https://github.com/HerilS',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Heril_Saha.jpg',
+                  avatar: 'images/projects/coco/contributors/Heril_Saha.jpg',
                 },
                 {
                   name: 'Hao Cheng',
                   link: 'https://github.com/pepeworm',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Hao_Cheng.jpg',
+                  avatar: 'images/projects/coco/contributors/Hao_Cheng.jpg',
                 },
                 {
                   name: 'Jason Li',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/Jason_Li.jpg',
+                  avatar: 'images/projects/coco/contributors/Jason_Li.jpg',
                 },
                 {
                   name: 'William Ma',
-                  avatar:
-                    'https://coco.yegyouth.tech/assets/images/team/William_Ma.png',
+                  avatar: 'images/projects/coco/contributors/William_Ma.png',
                 },
                 {
                   name: 'and 4 more',

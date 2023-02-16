@@ -89,10 +89,13 @@ export default function Project(props) {
               className='group relative hover:z-10'
             >
               {(!contributor.more && (
-                <img
+                <ExportedImage
                   src={contributor.avatar}
                   alt={`${contributor.name} avatar`}
                   className='h-8 w-8 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'
+                  width={32}
+                  height={32}
+                  sizes='32px'
                 />
               )) || (
                 <div className='flex h-8 w-8 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg'>
