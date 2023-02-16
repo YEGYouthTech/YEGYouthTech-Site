@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
 // import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 import Zoom from 'react-reveal/Zoom';
@@ -17,11 +17,12 @@ export default function ExecMember({
       <div className='w-1/5 px-1'>
         <div className='flex flex-col'>
           <div className='relative aspect-square w-full'>
-            <Image
+            <ExportedImage
               className='rounded-md border-2 border-neutral-800 drop-shadow-md transition-all delay-100 duration-200'
               src={image}
               alt='Executive team images'
               layout='fill'
+              sizes='20vw'
             />
           </div>
           <div className='mt-4 text-center'>

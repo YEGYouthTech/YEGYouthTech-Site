@@ -214,7 +214,7 @@ export default function App() {
               name='Course Companion'
               description='A non-district tool to help students compare timetables, filling in the gaps in official programs (SchoolZone).'
               disclaimer='Only available for students of Old Scona Academic.'
-              logo='/images/projects/coco/logo.png'
+              logo='images/projects/coco/logo.png'
               link='https://coco.yegyouth.tech/'
               // gradientFrom='sky-300'
               // gradientTo='emerald-300'
@@ -278,9 +278,7 @@ export default function App() {
 
       <SectionBreak />
 
-      <div
-        className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row'
-      >
+      <div className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row'>
         <div>
           <img
             src='/images/landing/aboutUs.jpg'
@@ -311,9 +309,7 @@ export default function App() {
         </div>
       </div>
 
-      <div
-        className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row-reverse'
-      >
+      <div className='font-workSans mx-auto mb-[4.5rem] flex max-w-4xl flex-col items-center justify-center gap-10 px-4 md:flex-row-reverse'>
         <div>
           <img
             src='/images/landing/COT.jpg'
@@ -321,7 +317,7 @@ export default function App() {
             className='h-[20rem] w-[140rem] rounded-xl object-cover md:h-[30rem]'
           />
         </div>
-        
+
         <div>
           <Fade up>
             <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-left font-montserrat text-4xl font-bold text-transparent'>

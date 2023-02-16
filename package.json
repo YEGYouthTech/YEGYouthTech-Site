@@ -15,11 +15,13 @@
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "export": "next build && next export && next-image-export-optimizer"
   },
   "dependencies": {
     "clsx": "^1.2.1",
     "next": "^13.1.6",
+    "next-image-export-optimizer": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
