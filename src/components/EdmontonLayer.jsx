@@ -1,3 +1,4 @@
+import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
 
 import { useAnimationState } from '../context/AnimationStateContext';
@@ -26,17 +27,17 @@ export default function EdmontonLayer(props) {
   });
 
   return (
-    <img
-      src={image}
-      alt='Edmonton skyline'
+    <div
       className='absolute h-full w-full object-cover object-left-bottom'
       ref={ref}
       style={{
         filter: `brightness(${brightness}%)`,
-        transition: `bottom 0.5s ease-out ${animationDelay}s, opacity 0.5s ease-out ${animationDelay}s, transform 100ms linear`,
+        transition: `bottom 0.5s ease-out ${animationDelay}s, opacity 0.5s ease-out ${animationDelay}s, transform 10ms linear`,
         bottom: !animationState ? `calc(100px - 80vh)` : `0`,
         opacity: !animationState ? 0 : 1,
       }}
-    />
+    >
+      <ExportedImage src={image} alt='' layout='fill' priority />
+    </div>
   );
 }

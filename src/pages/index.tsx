@@ -68,19 +68,19 @@ export default function App() {
       <div className='relative h-screen w-screen overflow-hidden'>
         <StarBG />
         <EdmontonLayer
-          image='/images/landing/output2.png'
+          image='images/landing/output2.png'
           parallaxModifier={40}
           animationDelay={0.4}
           brightness={65}
         />
         <EdmontonLayer
-          image='/images/landing/output1.png'
+          image='images/landing/output1.png'
           parallaxModifier={20}
           animationDelay={0.2}
           brightness={60}
         />
         <EdmontonLayer
-          image='/images/landing/output0.png'
+          image='images/landing/output0.png'
           parallaxModifier={0}
           animationDelay={0}
           brightness={80}
