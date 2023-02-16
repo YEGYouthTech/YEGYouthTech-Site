@@ -32,7 +32,7 @@ export default function EdmontonLayer(props) {
       ref={ref}
       style={{
         filter: `brightness(${brightness}%)`,
-        transition: `bottom 0.5s ease-out ${animationDelay}s, opacity 0.5s ease-out ${animationDelay}s, transform 10ms linear`,
+        transition: `bottom 0.5s ease-out ${animationDelay}s, opacity 0.5s ease-out ${animationDelay}s`,
         bottom: !animationState ? `calc(100px - 80vh)` : `0`,
         opacity: !animationState ? 0 : 1,
       }}
