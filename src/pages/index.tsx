@@ -95,7 +95,7 @@ export default function App() {
           className='glass mt-32 mb-24 max-w-2xl p-12'
           body={
             <>
-              <div className='-mt-5 mb-4'>
+              <div className='mb-4 -mt-5'>
                 <a
                   href='https://yegyouth.tech/projects/valenlp/'
                   target='_blank'
@@ -112,7 +112,7 @@ export default function App() {
                 students. On Valentine's Day 2023, YEGYouthTech launched ValeNLP
                 by sending out its first 369 cards to each and every student at
                 Old Scona Academic.
-                {/* <div className='mx-auto mt-4 flex w-40 flex-row gap-2'>
+                {/* <div className='flex flex-row w-40 mx-auto mt-4 gap-2'>
                 <CTV className='' />
                 <CityNews className='fill-current' />
               </div> */}
@@ -144,15 +144,15 @@ export default function App() {
       </Zoom>
 
       {/* Create a "Our Mission / Goal" section here */}
-      {/* <div className='mx-auto my-16 max-w-5xl px-4' id='cot'>
+      {/* <div className='max-w-5xl px-4 mx-auto my-16' id='cot'>
         <div className='overflow-hidden'>
           <Fade delay={100} bottom>
-            <h1 className='bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='text-4xl font-bold text-center text-transparent bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text font-montserrat'>
               Components of Technology
             </h1>
           </Fade>
           <Fade delay={300} bottom>
-            <p className='mt-6 mb-10 text-center text-lg text-gray-100'>
+            <p className='mt-6 mb-10 text-lg text-center text-gray-100'>
               Technology isn't a monolithic industry.
               <br />
               Rather, its components are diverse and complex.
@@ -238,11 +238,6 @@ export default function App() {
                 {
                   name: 'Elina Ajamian',
                   avatar: 'images/projects/coco/contributors/Elina_Ajamian.jpg',
-                },
-                {
-                  name: 'Heril Saha',
-                  link: 'https://github.com/HerilS',
-                  avatar: 'images/projects/coco/contributors/Heril_Saha.jpg',
                 },
                 {
                   name: 'Hao Cheng',
@@ -341,12 +336,12 @@ export default function App() {
       >
         <div>
           <Fade bottom>
-            <h1 className='mb-6 bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-center font-montserrat text-4xl font-bold text-transparent'>
+            <h1 className='mb-6 text-4xl font-bold text-center text-transparent bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text font-montserrat'>
               About Us
             </h1>
           </Fade>
           <Fade bottom>
-            <p className='mb-8 text-center text-lg text-gray-100'>
+            <p className='mb-8 text-lg text-center text-gray-100'>
               Our mission is to foster an appreciation for the ways technology
               has changed our lives, inspiring and empowering the next
               generation of technologists in our community.
@@ -459,10 +454,10 @@ export default function App() {
                     href='https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm'
                     target='_blank'
                     rel='noreferrer'
-                    className='animate-underline text-blue-400'
+                    className='text-blue-400 animate-underline'
                   >
                     the U.S. BLS
-                    <span className='text-underline bg-blue-400'></span>
+                    <span className='bg-blue-400 text-underline'></span>
                   </a>
                   , jobs for information security analysts will grow by 35% from
                   2021 to 2031. This rate is 7 times faster than the average

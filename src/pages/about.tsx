@@ -60,7 +60,7 @@ export default function App() {
 
       <Navbar />
 
-      {/* <div className='relative h-screen w-screen overflow-hidden'> */}
+      {/* <div className='relative w-screen h-screen overflow-hidden'> */}
       <StarBG />
       {/* </div> */}
 
@@ -164,15 +164,6 @@ export default function App() {
               // orientation='right'
               // breakLine={true}
               id={4}
-            />
-            <ExecMember
-              name='Heril Saha'
-              title='Full Stack Developer'
-              image='images/team/exec/Heril_Saha.jpg'
-              // quote='Heril Saha is a creative professional with over 2 years of developing web applications and designs that effectively engages targeted audiences. He was one of the finalists in the Skills Canada 2022 web development competition, and has a passion for creating and innovating the web in any way he can. One of his biggest projects was DecaUI, a production-ready themeable component library built with ReactJS which has been downloaded by millions of people worldwide. He is also actively involved in his community with over 3 years of volunteering experience at the City of Edmonton Youth Council which hosts a vast array of projects benefiting the well-being of Edmontonians residing in Alberta.'
-              // orientation='left'
-              // breakLine={false}
-              id={5}
             />
           </div>
 
