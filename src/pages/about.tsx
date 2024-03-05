@@ -165,6 +165,15 @@ export default function App() {
               // breakLine={true}
               id={4}
             />
+            <ExecMember
+              name='Ada Janisz'
+              title='Director of External Outreach'
+              image='images/team/exec/Ada_Janisz.jpg'
+              // quote='Wanting to bring the joy of problem solving to every student, Frank wishes to provide the motivation and opportunities for everyone to start out in tech competitions. With years of experience in many different contests, varying from programming (CCC, USACO) to cybersecurity (CyberPatriot, PicoCTF) and time as an OSA Computer Society executive, Frank wishes to share his experience with all.'
+              // orientation='right'
+              // breakLine={true}
+              id={4}
+            />
           </div>
 
           <Zoom>
