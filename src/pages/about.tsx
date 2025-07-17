@@ -174,6 +174,12 @@ export default function App() {
               // breakLine={true}
               id={4}
             />
+            <ExecMember
+              name='Rick Lin'
+              title='Director of Event Logistics'
+              image='images/team/exec/Rick_Lin.jpg'
+              id={4}
+            />
           </div>
 
           <Zoom>
